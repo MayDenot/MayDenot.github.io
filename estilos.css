@@ -159,26 +159,37 @@ li span {
     background-size: cover;
     background-position: center, center;
     height: 100vh;
+    font-size: 20px;
 }
 
-.formacionacademica {
-    flex-direction: column;
-    align-items: center;
+.form-acad {
+    font-size: 50px;
+}
+
+.ul-form li {
+    font-size: 25px;
 }
 
 .ul-form li span {
     color: #fff;
 }
 
-#contenido-formacionacademica {
+.año {
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    padding-bottom: 35px;
+}
+
+.contenido-formacademica {
     display: flex;
+    width: 80vw;
+    height: 80vh;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
-    padding: 25px 250px;
-    margin: 0 270px;
+    align-items: center;
     color: #fff;
-    background-color: rgba(0,0,0,.5);
+    margin-right: 30px;
 }
 
 /**Responsive Intermedio*/
