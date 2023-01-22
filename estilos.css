@@ -12,7 +12,7 @@ html {
 /** SECCION "INICIO"*/
 
 #inicio {
-	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("HistoriaFondodeprueba.jpg");
+	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("HistoriaFondodeprueba.jpg");
     background-size: cover;
     background-position: center, center;
     height: 100vh;
@@ -101,7 +101,7 @@ header.abajo {
 
 /** FOTO DE FONDO DE CARL*/
 .datospersonales {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("prueba1carlhd.png");
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("CARL.png");
     background-size: cover;
     background-position: center, center;
     height: 100vh;
@@ -119,6 +119,7 @@ header.abajo {
 .datosp /**h2*/ {
     position: relative;
     top: -120px;
+    left: -20px;
     color: #fff;
     font-size: 50px;
     display: flex;
@@ -164,6 +165,9 @@ li span {
 
 .form-acad {
     font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
 }
 
 .ul-form li {
@@ -171,25 +175,57 @@ li span {
 }
 
 .ul-form li span {
-    color: black;
+    color: #fff;
 }
 
-.año {
+.años {
     text-decoration: none;
     list-style: none;
     font-size: 30px;
     padding-bottom: 35px;
 }
 
-.contenido-formacademica {
+.info {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 1%;
+    position: relative;
     display: flex;
     width: 80vw;
-    height: 80vh;
+    height: 35vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin-right: 30px;
+    bottom: -50px;
+    top: 50px;
+    left: 175px;
+
+}
+
+
+.imagenUNT {
+    display: flex;
+    align-items: center;
+    left: -22px;
+    position: relative;
+    top: -50px;
+}
+
+.imagenMU {
+    position: relative;
+    top: -150px;
+    display: flex;
+    align-items: center;
+}
+
+p .mu {
+    width: 75%;
+    padding-left: 160px;
+}
+
+.unt {
+    padding-left: 160px;
+    padding-top: 95px;
 }
 
 /**Responsive Intermedio*/
