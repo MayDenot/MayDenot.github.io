@@ -10,10 +10,11 @@
     rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="LogoD2.ico">
     <script src="https://kit.fontawesome.com/dc94cdf766.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- SECCION INICIO -->
+    <!-- SECCION INICIO / HEADER-->
     <section id="inicio">
         <div class="contenido">
             <header>
@@ -56,13 +57,13 @@
                 <h2 class="datosp">DATOS PERSONALES</h2> <br> <br>
 
                     <ul class="ul-datos">
-                        <li>Nombre/s: <span>Carl.</span></li> <br>
-                        <li>Apellido/s: <span>Johnson.</span></li> <br>
-                        <li>Email: <span>carl.johnson@gmail.com.</span></li> <br>
-                        <li>Fecha de nacimiento: <span>4 de junio de 1981.</span></li> <br>
-                        <li>Lugar de nacimiento: <span>Texas, Estados Unidos.</span></li> <br>
-                        <li>Edad: <span>41 años.</span></li> <br>
-                        <li>Direccion: <span>4456 Sandy Lake, TX 75019, EE.UU.</span></li>
+                        <li><u>Nombre/s</u>: <span>Carl.</span></li> <br>
+                        <li><u>Apellido/s</u>: <span>Johnson.</span></li> <br>
+                        <li><u>Email</u>: <span>carl.johnson@gmail.com.</span></li> <br>
+                        <li><u>Fecha de nacimiento</u>: <span>4 de junio de 1981.</span></li> <br>
+                        <li><u>Lugar de nacimiento</u>: <span>Texas, Estados Unidos.</span></li> <br>
+                        <li><u>Edad</u>: <span>41 años.</span></li> <br>
+                        <li><u>Direccion</u>: <span>4456 Sandy Lake, TX 75019, EE.UU.</span></li>
                     </ul>
             </div>
     </section>
@@ -77,7 +78,7 @@
 
                 <div class="info">                
                         
-                    <div class="sliders">
+                    <div class="sliders" data-aos="zoom-in">
 
                         <ul>
                             <li><img src="slider1.jpg" alt="Diploma"></li>
@@ -89,11 +90,11 @@
 
                         <ul class="ul-form">
                             <li class="años"><span>2000-2005</span></li>
-                            <li>Título/s oficial/es: <span>Doctorado de Historia.</span></li>
-                            <li>Lugar de estudio: <span>Universidad del Norte de Texas, Denton.</span></li>  <br> <br> <br>
+                            <li><u>Título/s oficial/es</u>: <span> Doctorado de Historia.</span></li>
+                            <li><u>Lugar de estudio</u>: <span> Universidad del Norte de Texas, Denton.</span></li>  <br> <br> <br>
                             <li class="años"><span>2015-2019</span></li>
-                            <li>Título/s oficial/es: <span>Licenciado en Ciencias de la Computación.</span></li>
-                            <li>Lugar de estudio: <span>Universidad Mercer de Macon, Georgia.</span></li>
+                            <li><u>Título/s oficial/es</u>: <span> Licenciado en Ciencias de la Computación.</span></li>
+                            <li><u>Lugar de estudio</u>: <span> Universidad Mercer de Macon, Georgia.</span></li>
                         </ul>
 
                 </div>
@@ -127,27 +128,131 @@
 
     <section id="habilidades">
 
-        <div class="contenido-habilidades">
-
             <h2 class="habi">HABILIDADES</h2>
 
-            <ul class="habilidades">
-                <li>Capacidad de análisis y síntesis.</li>
-                <li>Capacidad de organización y planificación.</li>
-                <li>Capacidad de comunicación oral y escrita.</li>
-                <li>Manejo de herramientas digitales.</li>
-                <li>Trabajo en equipo.</li>
-                <li>Puntualidad.</li>
-                <li>Buena gestion del tiempo.</li>
-                <li>Idiomas: Ingles (Nativo) y Español (C1).</li>
-            </ul>
+        <div class="contenido-habilidades">
+
+                <ul class="habilidades-ul" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <li>Capacidad de análisis y síntesis.</li>
+                    <li>Capacidad de organización y planificación.</li>
+                    <li>Capacidad de comunicación oral y escrita.</li>
+                    <li>Manejo de herramientas digitales.</li>
+                    <li>Trabajo en equipo.</li>
+                    <li>Puntualidad.</li>
+                    <li>Buena gestion del tiempo.</li>
+                    <li>Idiomas: Ingles (Nativo) y Español (C1).</li>
+                </ul>
 
         </div>
 
     </section>
 
+    <!--SECCION "CONTACTO"-->
+
+    <section id="contacto">
+
+        <div class="content2">
+
+            <h2 class="h2-contact">CONTACTAME</h2>
+
+                <div class="cont" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+
+                    <div class="contactame">
+
+                        <div class="contact-form">
+
+                            <form action="">
+                                <p>
+                                    <label>Nombre y Apellido</label>
+                                    <input type="text" name="nombreyapellido" required>
+                                </p>
+                                <p>
+                                    <label>Email</label>
+                                    <input type="email" name="email" required>
+                                </p>
+                                <p>
+                                    <label>Número de teléfono</label>
+                                    <input type="tel" name="telefono" required>
+                                </p>
+                                <p>
+                                    <label>Asunto</label>
+                                    <input type="text" name="asunto" required>
+                                </p>
+                                <p class="block">
+                                    <label>Mensaje</label>
+                                    <textarea name="mensaje" rows="5"></textarea>
+                                </p>
+                                <p class="block">
+                                    <button type="submit"> Enviar </button>
+                                </p>
+                            </form>        
+                        </div>
+
+                        <div class="contact-info">
+
+                            <h4>Más Información</h4>
+
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"> </i> 4456 Sandy Lake, TX 75019</li>
+                                    <li><i class="fas fa-phone"> </i> (708) 659-4434</li>
+                                    <li><i class="fa-regular fa-envelope"> </i> carl.johnson@gmail.com</li>
+                                </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+    </section>
+
+    <!--SECCION PIE DE PAGINA / FOOTER-->
+
+    <footer>
+
+        <div class="made-by">
+
+            <p>Hecho por <i class="fa-regular fa-copyright"></i> MayraDenot</p>
+
+        </div>
+
+        <div class="logo-footer">
+
+            <h2>CJ</h2>
+
+        </div>
+
+            <div class="contenedor-footer">
+
+                <a href="https://www.instagram.com/maydenot/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/mayradenot" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/MayDenot" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/mayra.denot.5/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+
+            </div>    
+
+            <div class="avisos">  
+
+                <p>Aviso Legal</p>
+                <p>Política de Privacidad</p>
+
+            </div>   
+        
+
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="app.js"></script>
-
+    <script>
+        AOS.init();
+      </script>
+   
 </body>
 </html>

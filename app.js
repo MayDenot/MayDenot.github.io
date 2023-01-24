@@ -21,6 +21,3 @@ const typed = new Typed('.typed',{
 	cursorChar: '|', 
 	contentType: 'html', 
 });
-
-
-
