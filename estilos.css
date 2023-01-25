@@ -316,6 +316,40 @@ li span {
     justify-content: flex-start;
 }
 
+.content-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img-habilidades {
+    width: 500px;
+    height: 400px;
+    margin: 0;
+    background-color: transparent;
+    border: #16C1B9 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 200px;
+    bottom: 200px;
+    position: relative;
+    box-shadow: 5px 5px 15px #16C1B9;
+}
+
+.img-habilidades ul {
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-habilidades ul li {
+    padding: 20px;
+}
+
+
+
 /** SECCION "CONTACTO"*/
 
 #contacto {
@@ -467,7 +501,8 @@ footer {
     transition: .3s;
 }
 
-footer h2 {
+footer h2 b {
+    font-family: 'Arapey', serif;
     font-size: 40px;
     padding-left: 20px;
 }
