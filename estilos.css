@@ -7,6 +7,13 @@
 
 html {
 	scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /** SECCION "INICIO"*/
@@ -14,7 +21,7 @@ html {
 #inicio {
 	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("Fondo1.jpg");
     background-size: cover;
-    background-position: center, center;
+    background-position: center;
     height: 100vh;
 }
 
@@ -43,10 +50,8 @@ h1 {
 	color: #fff;
 }
 
-#inicio .contenido header .contenido-header  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
+#inicio .contenido header .contenido-header  nav ul li {
+    display: inline-block;
 }
 
 #inicio .contenido header .contenido-header  nav ul li a {
@@ -70,13 +75,13 @@ header.abajo {
 }
 
 #inicio .contenido .presentacion {
-	max-width: 1100px;
 	height: 100vh;
 	margin: auto;
 	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    padding: 300px;
 }
 
 #inicio .contenido .presentacion h2 {
@@ -92,31 +97,46 @@ header.abajo {
 	color: #16C1B9;
 }
 
-#icono-nav {
+.checkbtn {
+    font-size: 30px;
 	color: #fff;
-	display: none;
+    float: right;
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#check {
+    display: none;
 }
 
 /** SECCION "DATOS PERSONALES"*/
 
-/** FOTO DE FONDO DE CARL*/
-.datospersonales {
+/**SECTION*/
+#datospersonales {
+    display: flex;
+}
+
+/** FOTO DE FONDO DE CARL izq*/
+.izquierdaDP {
     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("CARL.png");
     background-size: cover;
-    background-position: center, center;
+    background-position: center;
     height: 100vh;
     width: 50%;
     display: flex;
 }
 
-/** SECTION*/
-#datospersonales {
+/** FONDO DE COLOR NARANJA derecha */
+.derechaDP {
     background-color: #C87115;
     display: flex;
+    height: 100vh;
+    width: 50%;
 }
 
 /** TITULO DE LOS DATOS PERSONALES DEL CV*/
-.datosp /**h2*/ {
+.datosp {
     position: relative;
     top: -120px;
     left: -20px;
@@ -140,7 +160,6 @@ header.abajo {
 
 li span {
     color: #fff ;
-    text-shadow: none;
 }
 
 /** CONTENIDO DE LOS DATOS PERSONALES, (.datosp + .ul)*/
@@ -156,7 +175,7 @@ li span {
 /** SECCION "FORMACION ACADEMICA"*/
 
 #formacionacademica {
-    background-color: #2A2929;
+    background-color: #1D1C1C;
     height: 100vh;
     font-size: 20px;
 }
@@ -236,7 +255,9 @@ li span {
 
 /** SECCION "EXPERIENCIA" */
 #experiencia {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pizarron.png");
+    background-color: #1D1C1C;
+    /**
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pizarron.png"); */
     background-size: cover;
     background-position: center, center;
     height: 100vh;
@@ -261,7 +282,7 @@ li span {
 
 .exper {
     font-size: 50px;
-    color: #fff;
+    color: #16C1B9;
     padding-top: 60px;
     padding-left: 80px;
 }
@@ -361,7 +382,7 @@ li span {
 }
 
 .h2-contact {
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     font-size: 50px;
     color: #16C1B9;
     display: flex;
@@ -451,11 +472,38 @@ li span {
 .cont {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -100px;
 }
 
 .content2 {
     position: relative;
     top: 150px;
+}
+
+.CV-descarga {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    background-color: #16C1B9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.CV-descarga:hover {
+    box-shadow: 1px 1px 15px #16C1B9;
+    transition: .3s;
+    outline: 0;
+}
+
+.Descarga {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 290px;
 }
 
 /**SECCION PIE DE PAGINA*/
@@ -530,7 +578,171 @@ footer h2 b {
     justify-content: center;
 }
 
-/**Responsive Intermedio*/
+
+
+/**RESPONSIVE*/
+@media screen and (max-width: 650px) {
+
+    /**Menu e Inicio*/
+
+    h1 {
+        padding-left: 30px;
+    }
+
+    #inicio .contenido .presentacion {
+        padding: 50px;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        top: 68px;
+        background-color: #2A2929;
+        text-align: center;
+        transition: all .5s; 
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 100px;
+        border-bottom: 1px #fff;
+        line-height: 30px;
+    }
+
+    #inicio .contenido header .contenido-header  nav ul li a:hover {
+        background-color: #fff;
+        opacity: .6;
+        color: #2A2929;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    /**Datos Personales*/
+
+    .datosp {
+        font-size: 30px;
+        padding-top: 100px;
+        left: -100px;
+        text-align: left;
+    }
+
+    .ul-datos {
+        text-align: left;
+        left: -80px;
+        font-size: 20px;
+    }
+
+    li span {
+        padding: 5px;
+    }
+
+    /**Formacion Academica*/
+
+    .form-acad {
+        font-size: 40px;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        top: 250px;
+    }
+    
+    .sliders {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        border: #16C1B9 solid 5px;
+        left: -125px;
+        top: -20px;
+        position: relative;
+    }
+
+    .ul-form {
+        left: -80px;
+        top: 200px;
+        position: relative;
+    }
+
+    .ul-form li {
+        font-size: 23px;
+    }
+
+    /**Experiencia*/
+
+    .experiencia {
+        position: relative;
+        left: -20px;
+        top: 20px;
+        font-size: 23px;
+        padding: 70px;
+    }
+
+    .experiencia li {
+        padding: 10px;
+    }
+
+    /**Habilidades*/
+
+    .habi {
+        left: -130px;
+        top: 110px;
+    }
+
+    .content-img {
+        position: relative;
+        top: 400px;
+        left: 125px;
+    }
+
+    .habilidades-ul {
+        position: relative;
+        right: 100px;
+        top: -50px;
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    /**Contacto*/
+
+    .h2-contact {
+        position: relative;
+        top: -60px;
+    }
+
+    .contactame {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        top: -50px;
+        position: relative;
+    }
+
+    .contact-form form p {
+        padding: 15px;
+    }
+
+    .contact-info {
+        box-shadow: 0 5px 10px #16C1B9;
+    }
+
+    .Descarga {
+        top: 0;
+    }
+    
+}
+
+
+/**Responsive Intermedio
 @media screen and (max-width:1270px){
 
     .img-CJ {
@@ -596,8 +808,9 @@ footer h2 b {
         padding: 140px 0 0 0;
     }
 }
+*/
 
-/** Responsive para Tablets*/
+/** Responsive para Tablets
 @media screen and (max-width: 910px){
 
     .padre {
@@ -665,7 +878,7 @@ footer h2 b {
  
 }  
 
-/**Responsive para Móviles*/
+/**Responsive para Móviles 
 @media screen and (max-width: 650px){
 
     .padre {
@@ -733,7 +946,7 @@ footer h2 b {
  
 }  
 
-/**Responsive para resoluciones mini*/
+ Responsive para resoluciones mini
 @media screen and (max-width:300px){
 
     .padre {
@@ -810,3 +1023,5 @@ footer h2 b {
         margin: 0 0;
     }   
 }
+
+*/

@@ -21,3 +21,14 @@ const typed = new Typed('.typed',{
 	cursorChar: '|', 
 	contentType: 'html', 
 });
+
+
+$(document).ready(main);
+
+var contador = 1 ;
+
+function main() {
+	$('#check').click(function(){
+		$('nav').toggle();
+	});
+};

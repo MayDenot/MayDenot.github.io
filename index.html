@@ -16,13 +16,16 @@
 <body>
     <!-- SECCION INICIO / HEADER-->
     <section id="inicio">
+
         <div class="contenido">
+
             <header>
+
                 <div class="contenido-header">   
 
                     <h1>CJ</h1>
 
-                        <nav id="nav">
+                        <nav>
 
                             <ul id="links">
                                 <li><a href="#inicio" class="active">INICIO</a></li>
@@ -37,10 +40,14 @@
 
                     <!--Iconos del menu responsive -->
                     
-                    <div id="icono-nav">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+                    <input type="checkbox" id="check">
+
+                        <label for="check" class="checkbtn">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+
                 </div>
+
             </header>
 
             <div class="presentacion">
@@ -56,7 +63,9 @@
 
     <section id="datospersonales">
 
-        <div class="datospersonales"></div>
+        <div class="izquierdaDP"></div> 
+
+        <div class="derechaDP">
 
             <div id="contenido-datospersonales">
 
@@ -72,6 +81,9 @@
                         <li><u>Direccion</u>: <span>4456 Sandy Lake, TX 75019, EE.UU.</span></li>
                     </ul>
             </div>
+
+        </div>
+
     </section>
 
     <!--SECCION "FORMACION ACADEMICA"-->
@@ -96,10 +108,10 @@
 
                         <ul class="ul-form">
                             <li class="años"><span>2000-2005</span></li>
-                            <li><u>Título/s oficial/es</u>: <span> Doctorado de Historia.</span></li>
+                            <li><u>Título oficial</u>: <span> Doctorado de Historia.</span></li>
                             <li><u>Lugar de estudio</u>: <span> Universidad del Norte de Texas, Denton.</span></li>  <br> <br> <br>
                             <li class="años"><span>2015-2019</span></li>
-                            <li><u>Título/s oficial/es</u>: <span> Licenciado en Ciencias de la Computación.</span></li>
+                            <li><u>Título oficial</u>: <span> Licenciado en Ciencias de la Computación.</span></li>
                             <li><u>Lugar de estudio</u>: <span> Universidad Mercer de Macon, Georgia.</span></li>
                         </ul>
 
@@ -121,7 +133,7 @@
                 <li class="año2"><span>2008-2012</span></li>
                 <li>Profesor de Historia en Texas City High School, 1431 9th Ave N, Texas City, TX 77590, Estados Unidos.</li> <br> <br>
                 <li class="año2"><span>2012-2019</span></li>
-                <li>Profesor de Historia e la Universidad de Maryland en Collage Park, MD 20742, Estados Unidos.</li> <br> <br>
+                <li>Profesor de Historia en la Universidad de Maryland en Collage Park, MD 20742, Estados Unidos.</li> <br> <br>
                 <li class="año2"><span>2019-2022</span></li>
                 <li>Desarrollador Web para la empresa Itransition, Estados Unidos.</li>
              </ul>
@@ -225,6 +237,12 @@
                                     <li><i class="fa-regular fa-envelope"> </i> carl.johnson@gmail.com</li>
                                 </ul>
 
+                                <div class="Descarga">
+
+                                     <a href="CV.pdf" class="CV-descarga" download="Curriculum Vitae" title="Descargar CV"> Descargar CV</a>
+
+                                </div>
+
                         </div>
 
                     </div>
@@ -270,7 +288,7 @@
 
     </footer>
 
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="app.js"></script>
