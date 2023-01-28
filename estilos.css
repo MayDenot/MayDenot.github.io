@@ -256,8 +256,6 @@ li span {
 /** SECCION "EXPERIENCIA" */
 #experiencia {
     background-color: #1D1C1C;
-    /**
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("pizarron.png"); */
     background-size: cover;
     background-position: center, center;
     height: 100vh;
@@ -379,6 +377,7 @@ li span {
     height: 100vh;
     padding: 50px;
     color: #fff;
+    position: relative;
 }
 
 .h2-contact {
@@ -594,7 +593,9 @@ footer h2 b {
     }
 
     #inicio .contenido .presentacion h2 {
-        font-size: 40px;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
     }
 
     .checkbtn {
@@ -603,8 +604,8 @@ footer h2 b {
 
     nav {
         position: fixed;
-        width: 80%;
-        height: 100vh;
+        width: 97%;
+        height: 60vh;
         top: 68px;
         background-color: #2A2929;
         text-align: center;
@@ -612,9 +613,7 @@ footer h2 b {
     }
 
     nav ul li {
-        display: block;
-        margin: 50px 100px;
-        border-bottom: 1px #fff;
+        margin: 25px;
         line-height: 30px;
     }
 
@@ -628,9 +627,21 @@ footer h2 b {
 
     /**Datos Personales*/
 
+    #datospersonales {
+        display: flex;
+    }
+
+    .izquierdaDP {
+        background: none;
+    }
+
+    .derechaDP {
+        width: 100%;
+    }
+
     .datosp {
         font-size: 30px;
-        padding-top: 100px;
+        padding-top: 130px;
         left: -100px;
         text-align: left;
     }
@@ -638,23 +649,24 @@ footer h2 b {
     .ul-datos {
         text-align: left;
         left: -80px;
-        font-size: 20px;
+        font-size: 18px;
+        justify-content: center;
     }
 
-    li span {
-        padding: 5px;
-    }
 
     /**Formacion Academica*/
 
     .form-acad {
-        font-size: 40px;
+        font-size: 30px;
+        top: -10px;
     }
     
     .info {
         display: grid;
         grid-template-columns: 1fr;
         top: 250px;
+        align-items: center;
+        justify-content: center;
     }
     
     .sliders {
@@ -662,73 +674,126 @@ footer h2 b {
         height: auto;
         overflow: hidden;
         border: #16C1B9 solid 5px;
-        left: -125px;
-        top: -20px;
+        left: -140px;
+        top: -150px;
         position: relative;
     }
 
     .ul-form {
-        left: -80px;
-        top: 200px;
+        left: -130px;
         position: relative;
     }
 
     .ul-form li {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     /**Experiencia*/
 
+    .exper {
+        font-size: 30px;
+        padding: 90px;
+    }
+
     .experiencia {
         position: relative;
-        left: -20px;
-        top: 20px;
-        font-size: 23px;
-        padding: 70px;
+        left: -40px;
+        font-size: 15px;
     }
 
     .experiencia li {
-        padding: 10px;
+        top: -15px;
+        padding: 5px;
+        font-size: 20px;
     }
 
     /**Habilidades*/
 
     .habi {
-        left: -130px;
+        font-size: 30px;
+        left: -115px;
         top: 110px;
+    }
+    
+    .img-habilidades {
+        width: 300px;
+        height: 200px;
+        top: 150px;
+        right: 0;
+        bottom: 0;
     }
 
     .content-img {
-        position: relative;
-        top: 400px;
-        left: 125px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img-habilidades ul {
+        text-decoration: none;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .img-habilidades ul li {
+        padding: 0;
+    }
+
+    .contenido-habilidades {
+        top: 120px;
+        left: 60px;
+        padding: 20px;
     }
 
     .habilidades-ul {
         position: relative;
-        right: 100px;
-        top: -50px;
-        font-size: 20px;
-        padding: 30px;
+        left: -60px;
+        font-size: 14px;
+        padding: 5px 25px;
+        width: 600px;
+        height: 300px;
+    }
+
+    .img-habilidades ul li img {
+        position: relative;
+        width: 80%;
+        left: 10px;
     }
 
     /**Contacto*/
 
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .h2-contact {
         position: relative;
-        top: -60px;
+        top: -110px;
+        font-size: 30px;
+        padding-bottom: 0;
     }
 
     .contactame {
-        display: grid;
         grid-template-columns: 1fr;
-        width: 80vw;
-        top: -50px;
+        width: 600px;
+        height: 450px;
         position: relative;
+        top: 15px;
+        font-size: 15px;
     }
 
     .contact-form form p {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .contact-form form {
+        padding: 0;
+    }
+
+    .contact-form {
+        padding: 10px;
     }
 
     .contact-info {
@@ -738,7 +803,13 @@ footer h2 b {
     .Descarga {
         top: 0;
     }
-    
+
+    /**Pie de Pagina*/
+
+    footer h2 b {
+        font-size: 35px;
+    }
+
 }
 
 
