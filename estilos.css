@@ -138,7 +138,7 @@ header.abajo {
 /** TITULO DE LOS DATOS PERSONALES DEL CV*/
 .datosp {
     position: relative;
-    top: -50px;
+    top: 50px;
     left: -20px;
     color: #fff;
     font-size: 50px;
@@ -156,10 +156,14 @@ header.abajo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 500px;
+    height: 600px;
 }
 
 .ul-datos li {
     padding: 10px;
+    position: relative;
+    bottom: -100px;
 }
 
 li span {
@@ -171,8 +175,12 @@ li span {
     flex-direction: column;
     justify-content: center;
     text-align: right;
-    padding: 0 60px;
-    margin: 0 60px;    
+    position: relative;
+    left: 80px;
+    width: 100%;
+    height: 100%; 
+    margin: 0 40px;
+    padding: 0 80px 0 40px;  
 }
 
 /** SECCION "FORMACION ACADEMICA"*/
@@ -192,7 +200,9 @@ li span {
 }
 
 .ul-form {
-    margin-left: 60px;
+    width: 100%;
+    height: auto;
+    padding-left: 60px;
     position: relative;
 }
 
@@ -226,9 +236,12 @@ li span {
     font-size: 25px;
 }
 
+.tmñ-sliders {
+    width: 750px;
+    height: 100%;
+}
+
 .sliders {
-    width: 800px;
-    height: 450px;
     overflow: hidden;
     border: #16C1B9 solid 5px;
 }
@@ -247,6 +260,7 @@ li span {
 
 .sliders img {
     width: 100%; 
+    height: 100%;
 }
 
 @keyframes slide {
@@ -327,12 +341,12 @@ li span {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    justify-items: end;
     width: 100%;
     height: auto;
     padding: 0 40px;
     position: relative;
     top: 70px;
+    float: right;
 }
 
 .contenido-habilidades {
@@ -402,6 +416,8 @@ li span {
 }
 
 .h2-contact {
+    position: relative;
+    top: -50px;
     padding-bottom: 200px;
     font-size: 50px;
     color: #16C1B9;
@@ -481,8 +497,8 @@ li span {
 }
 
 .contactame {
-    width: 50vw;
-    height: 500px;
+    width: 65vw;
+    height: 600px;
     background-color: #2A2929;
     box-shadow: 0 0 15px #16C1B9;
     display: grid;
@@ -493,7 +509,7 @@ li span {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -100px;
+    bottom: 200px;
 }
 
 .content2 {
@@ -523,7 +539,6 @@ li span {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 290px;
 }
 
 /**SECCION PIE DE PAGINA*/
@@ -833,27 +848,20 @@ footer h2 b {
 
 }
 
-/**RESPONSIVE Tablet*/
-@media screen and (max-width:950px) {
+/**RESPONSIVE Tablet L*/
+@media screen and (max-width: 992px) {
 
     /**Menu e Inicio*/
 
     h1 {
-        padding-left: 30px;
-    }
-
-    #inicio .contenido .presentacion {
-        padding: 50px;
-    }
-
-    #inicio .contenido .presentacion h2 {
-        font-size: 35px;
-        margin: 0;
-        padding: 0;
+        position: relative;
+        left: -120px;
     }
 
     .checkbtn {
         display: block;
+        position: relative;
+        right: -130px;
     }
 
     nav {
@@ -867,13 +875,12 @@ footer h2 b {
     }
 
     nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     nav ul li {
-        margin: 35px;
+        margin: 30px 150px;
         line-height: 30px;
     }
 
@@ -882,403 +889,87 @@ footer h2 b {
         opacity: .6;
         color: #2A2929;
         box-shadow: none;
-        padding: 20px;
-    }
-
-    /**Datos Personales*/
-
-    #datospersonales {
-        display: flex;
-    }
-
-    .derechaDP {
-        width: 80%;
-    }
-
-    #contenido-datosperonales {
-        display: grid;
-        grid-template-columns: auto;
-        text-align: center;
-        position: relative;
-        margin: 0 40px;
-        padding: 0 80px 0 40px;
-        top: 125px;
-        width: 100%;
-        height: 100%;
-        align-content: center;
-        justify-content: space-evenly;
-        align-items: end;
-    }
-
-    .datosp {
-        font-size: 40px;
-    }
-
-    .ul-datos {
-        font-size: 17px;
-    }
-
-
-    /**Formacion Academica*/
-
-    .form-acad {
-        font-size: 40px;
-        top: -5px;
-    }
-    
-    .info {
-        display: grid;
-        grid-template-columns: 1fr;
-        top: 250px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .sliders {
-        width: auto;
-        height: auto;
-        overflow: hidden;
-        border: #16C1B9 solid 5px;
-        left: -110px;
-        top: -60px;
-        position: relative;
-    }
-
-    .ul-form {
-        top: 150px;
-        left: -100px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-
-    .ul-form li {
-        font-size: 20px;
-    }
-
-    /**Experiencia*/
-
-    .exper {
-        font-size: 45px;
-        padding: 90px;
-    }
-
-    .experiencia {
-        position: relative;
-        left: -40px;
-        font-size: 20px;
-    }
-
-    .experiencia li {
-        top: -15px;
-        padding: 5px;
-        font-size: 25px;
-    }
-
-    /**Habilidades*/
-
-    .habi {
-        font-size: 40px;
-        left: -115px;
-        top: 130px;
-    }
-
-    .content-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenido-habilidades {
-        top: 170px;
-        left: 60px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .habilidades-ul {
-        position: relative;
-        left: -60px;
-        font-size: 20px;
-        padding: 20px 40px;
-        width: 600px;
-        height: 300px;
-    }
-
-    .img-habilidades {
-        top: 200px;
-        right: 5px;
-        bottom: 0;
-    }
-    
-    .img-habilidades ul li {
-        padding: 20px;
-    }
-
-
-    /**Contacto*/
-
-    .cont {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .h2-contact {
-        position: relative;
-        top: -90px;
-        font-size: 40px;
-        padding-bottom: 0;
-    }
-
-    .contactame {
-        grid-template-columns: 1fr;
-        width: 600px;
-        height: 450px;
-        position: relative;
-        top: 100px;
-        font-size: 20px;
-    }
-
-    .contact-form form p {
-        padding: 10px;
-    }
-
-    .contact-form form {
-        padding: 0;
-    }
-
-    .contact-form {
-        padding: 10px;
-    }
-
-    .contact-info {
-        box-shadow: 0 5px 10px #16C1B9;
-    }
-
-    .Descarga {
-        top: 0;
-    }
-
-    /**Pie de Pagina*/
-
-    footer {
-        font-size: 18px;
-    }
-}
-
-/**RESPONSIVE Laptop*/
-@media screen and (max-width: 1024px) {
-
-    /**Menu e Inicio*/
-
-    h1 {
-        padding-left: 30px;
-    }
-
-    #inicio .contenido .presentacion {
-        padding: 50px;
+        padding: 20px 30px;
     }
 
     #inicio .contenido .presentacion h2 {
-        font-size: 35px;
-        margin: 0;
-        padding: 0;
+        font-size: 45px;
+        margin-bottom: 25px;
     }
 
     /**Datos Personales*/
 
-    #datospersonales {
-        display: flex;
-    }
-
-    .derechaDP {
-        width: 75%;
-    }
-
     #contenido-datospersonales {
-        display: grid;
-        grid-template-columns: auto;
-        text-align: center;
-        position: relative;
-        margin: 0 40px;
-        padding: 0 80px 0 40px;
-        top: 125px;
-        width: 100%;
-        height: 100%;
-        align-content: center;
-        justify-content: space-evenly;
-        align-items: end;
+        width: auto;
+        height: auto;
+        padding: 0 40px 0 5px;
+        margin: 0 40px 0 5px;
     }
 
-    .ul-datos {
-        background-color: transparent;
-        width: 500px;
-        height: 600px;
+    .datosp {
+        font-size: 45px;
     }
 
-    .ul-datos li {
-        padding: 10px;
-    }
+}
 
+/**RESPONSIVE Laptop*/
+@media screen and (max-width: 1200px) {
+
+    /**Menu e Inicio*/
+
+    #inicio .contenido .presentacion {
+        padding: 300px 100px;
+    }
 
     /**Formacion Academica*/
 
     .form-acad {
         font-size: 40px;
-        top: -5px;
+        top: 50px;
     }
+    
     
     .info {
         display: grid;
-        grid-template-columns: 1fr;
-        top: 250px;
-        align-items: center;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
-    }
-    
-    .sliders {
-        width: auto;
-        height: auto;
-        overflow: hidden;
-        border: #16C1B9 solid 5px;
-        left: -110px;
-        top: -60px;
-        position: relative;
+        justify-items: end;
     }
 
-    .ul-form {
-        top: 150px;
-        left: -100px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-
-    .ul-form li {
-        font-size: 20px;
+    .años {
+        padding-bottom: 20px;
     }
 
     /**Experiencia*/
 
-    .exper {
-        font-size: 45px;
-        padding: 90px;
-    }
-
     .experiencia {
         position: relative;
-        left: -40px;
-        font-size: 20px;
+        top: 40px;
+        font-size: 23px;
     }
 
-    .experiencia li {
-        top: -15px;
-        padding: 5px;
+    .año2 {
         font-size: 25px;
     }
 
     /**Habilidades*/
-
-    .habi {
-        font-size: 40px;
-        left: -115px;
-        top: 130px;
-    }
-
-    .content-img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenido-habilidades {
-        top: 170px;
-        left: 60px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .habilidades-ul {
-        position: relative;
-        left: -60px;
-        font-size: 20px;
-        padding: 20px 40px;
-        width: 600px;
-        height: 300px;
-    }
-
-    .img-habilidades {
-        top: 200px;
-        right: 5px;
-        bottom: 0;
-    }
-    
-    .img-habilidades ul li {
-        padding: 20px;
-    }
-
-
-    /**Contacto*/
-
-    .cont {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .h2-contact {
-        position: relative;
-        top: -90px;
-        font-size: 40px;
-        padding-bottom: 0;
-    }
-
-    .contactame {
-        grid-template-columns: 1fr;
-        width: 600px;
-        height: 450px;
-        position: relative;
-        top: 100px;
-        font-size: 20px;
-    }
-
-    .contact-form form p {
-        padding: 10px;
-    }
-
-    .contact-form form {
-        padding: 0;
-    }
-
-    .contact-form {
-        padding: 10px;
-    }
-
-    .contact-info {
-        box-shadow: 0 5px 10px #16C1B9;
-    }
-
-    .Descarga {
-        top: 0;
-    }
-
-    /**Pie de Pagina*/
-
-    footer {
-        font-size: 18px;
-    }
 
 }
 
 /**RESPONSIVE Laptop L*/
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
 
     /**Menu e Inicio*/
+
+    #inicio .contenido header .contenido-header {
+        justify-content: space-around;
+    }
+
+    #inicio .contenido header .contenido-header nav ul li a {
+        margin: 0 5px;
+        font-weight: 300;
+        padding: 30px 10px 24px 10px;
+    }
 
     /**Datos Personales*/
 
@@ -1291,14 +982,10 @@ footer h2 b {
         grid-template-columns: auto;
         text-align: center;
         position: relative;
-        margin: 0 40px;
-        padding: 0 80px 0 40px;
-        top: 125px;
-        width: 100%;
-        height: 100%;
         align-content: center;
         justify-content: space-evenly;
         align-items: end;
+        left: 40px;
     }
 
     .ul-datos {
@@ -1316,24 +1003,52 @@ footer h2 b {
     .info {
         display: grid;
         grid-template-columns: auto auto;
-        align-items: center;
+        justify-content: center;
+        justify-items: end;
     }
 
     .ul-form li {
-        font-size: 22px;
+        font-size: 23px;
     }
 
-    .sliders {
-        width: 600px;
-        height: auto;
+    .tmñ-sliders {
+        width: 560px;
+        height: 100%;
     }
 
     .años {
         padding-bottom: 25px;
     }
 
+    /**Experiencia*/
+
+    .experiencia {
+        padding-right: 30px;
+    }
+
     /**Habilidades*/
 
+    .contenido-img-habilidades {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        justify-items: end;
+        width: 90%;
+    }
+
+    .content-img {
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    .contenido-habilidades {
+        width: 80%;
+        height: auto;
+    }
+
+    .habilidades-ul {
+        font-size: 20px;
+    }
 
 }
 
