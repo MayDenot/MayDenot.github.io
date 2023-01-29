@@ -138,7 +138,7 @@ header.abajo {
 /** TITULO DE LOS DATOS PERSONALES DEL CV*/
 .datosp {
     position: relative;
-    top: -120px;
+    top: -50px;
     left: -20px;
     color: #fff;
     font-size: 50px;
@@ -150,7 +150,7 @@ header.abajo {
 /** LOS DATOS PERSONALES DEL CV*/
 .ul-datos {
     position: relative;
-    top: -30px;
+    top: 30px;
     color: #5F3304;
     font-size: 25px;
     display: flex;
@@ -158,11 +158,14 @@ header.abajo {
     align-items: flex-start;
 }
 
+.ul-datos li {
+    padding: 10px;
+}
+
 li span {
     color: #fff ;
 }
 
-/** CONTENIDO DE LOS DATOS PERSONALES, (.datosp + .ul)*/
 #contenido-datospersonales {
     display: flex;
     flex-direction: column;
@@ -177,7 +180,6 @@ li span {
 #formacionacademica {
     background-color: #1D1C1C;
     height: 100vh;
-    font-size: 20px;
 }
 
 .form-acad {
@@ -189,8 +191,13 @@ li span {
     position: relative;
 }
 
+.ul-form {
+    margin-left: 60px;
+    position: relative;
+}
+
 .ul-form li {
-    font-size: 25px;
+    font-size: 27px;
     color: #16C1B9;
 }
 
@@ -206,17 +213,17 @@ li span {
 }
 
 .info {
-    position: relative;
-    display: flex;
-    width: 80vw;
-    height: 35vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    color: #fff;
-    bottom: -50px;
-    top: 50px;
-    left: 175px;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-items: end;
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    position: relative;
+    top: 100px;
+    font-size: 25px;
 }
 
 .sliders {
@@ -315,43 +322,57 @@ li span {
     box-shadow: 5px 5px 15px #16C1B9;
 }
 
+.contenido-img-habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: end;
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    position: relative;
+    top: 70px;
+}
+
 .contenido-habilidades {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
     position: relative;
     top: 200px;
-    padding-left: 200px;
+    width: 100%;
+    margin-right: 60px;
 }
 
 .habi {
     position: relative;
     top: 150px;
-    padding-left: 200px;
     font-size: 50px;
     color: #16C1B9;
-    display: flex;
     text-align: center;
-    justify-content: flex-start;
 }
 
 .content-img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
+    margin-left: 60px;
+    position: relative;
 }
 
 .img-habilidades {
     width: 500px;
     height: 400px;
-    margin: 0;
     background-color: transparent;
     border: #16C1B9 solid 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 60px;
     right: 200px;
-    bottom: 200px;
+    bottom: -200px;
     position: relative;
     box-shadow: 5px 5px 15px #16C1B9;
 }
@@ -579,8 +600,8 @@ footer h2 b {
 
 
 
-/**RESPONSIVE*/
-@media screen and (max-width: 650px) {
+/**RESPONSIVE Moviles*/
+@media screen and (max-width: 450px) {
 
     /**Menu e Inicio*/
 
@@ -812,287 +833,508 @@ footer h2 b {
 
 }
 
+/**RESPONSIVE Tablet*/
+@media screen and (max-width:950px) {
 
-/**Responsive Intermedio
-@media screen and (max-width:1270px){
+    /**Menu e Inicio*/
 
-    .img-CJ {
-        width: 45%;
-        padding: 145px 0 0 35px;
+    h1 {
+        padding-left: 30px;
     }
 
-    header, header.abajo {
-        padding: 0 0;
+    #inicio .contenido .presentacion {
+        padding: 50px;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
     }
 
     .checkbtn {
         display: block;
     }
 
-    header {
-        height: 70px;
-        padding-right: 40px;
-        background-color: #186B8D;
-    }
-    
-    nav ul {
+    nav {
         position: fixed;
         width: 100%;
-        height: 100vh;
-        right: -100%;
-        top: 70px;
-        background-color: #48484b;
+        height: 60vh;
+        top: 68px;
+        background-color: #2A2929;
         text-align: center;
-        transition: all 0.5s;
-        box-shadow: inset 0px 0 15px #fff;
+        transition: all .5s; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        display: block;
-        margin: 50px 50px;
-        line-height: 40px;
+        margin: 35px;
+        line-height: 30px;
     }
 
-    #check:checked ~ ul {
-        right: 0;
-
+    #inicio .contenido header .contenido-header  nav ul li a:hover {
+        background-color: #fff;
+        opacity: .6;
+        color: #2A2929;
+        box-shadow: none;
+        padding: 20px;
     }
 
-    li a.active, li a:hover {
-        color: #000000;
-        display: block;
-        background-color: none;
-        box-shadow: 0 0 25px 6px #186B8D;
-        text-shadow: none;
+    /**Datos Personales*/
+
+    #datospersonales {
+        display: flex;
+    }
+
+    .derechaDP {
+        width: 80%;
+    }
+
+    #contenido-datosperonales {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        position: relative;
+        margin: 0 40px;
+        padding: 0 80px 0 40px;
+        top: 125px;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+
+    .datosp {
+        font-size: 40px;
+    }
+
+    .ul-datos {
+        font-size: 17px;
+    }
+
+
+    /**Formacion Academica*/
+
+    .form-acad {
+        font-size: 40px;
+        top: -5px;
     }
     
-    .logo img {
-        height: 70px;
-        margin-right: 100px
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        top: 250px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sliders {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        border: #16C1B9 solid 5px;
+        left: -110px;
+        top: -60px;
+        position: relative;
     }
 
-    .padre {
+    .ul-form {
+        top: 150px;
+        left: -100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ul-form li {
         font-size: 20px;
     }
-    
-    .hijo {
-        padding: 140px 0 0 0;
+
+    /**Experiencia*/
+
+    .exper {
+        font-size: 45px;
+        padding: 90px;
     }
-}
-*/
 
-/** Responsive para Tablets
-@media screen and (max-width: 910px){
+    .experiencia {
+        position: relative;
+        left: -40px;
+        font-size: 20px;
+    }
 
-    .padre {
+    .experiencia li {
+        top: -15px;
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    /**Habilidades*/
+
+    .habi {
+        font-size: 40px;
+        left: -115px;
+        top: 130px;
+    }
+
+    .content-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenido-habilidades {
+        top: 170px;
+        left: 60px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .habilidades-ul {
+        position: relative;
+        left: -60px;
+        font-size: 20px;
+        padding: 20px 40px;
+        width: 600px;
+        height: 300px;
+    }
+
+    .img-habilidades {
+        top: 200px;
+        right: 5px;
+        bottom: 0;
+    }
+    
+    .img-habilidades ul li {
+        padding: 20px;
+    }
+
+
+    /**Contacto*/
+
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h2-contact {
+        position: relative;
+        top: -90px;
+        font-size: 40px;
+        padding-bottom: 0;
+    }
+
+    .contactame {
+        grid-template-columns: 1fr;
+        width: 600px;
+        height: 450px;
+        position: relative;
+        top: 100px;
+        font-size: 20px;
+    }
+
+    .contact-form form p {
+        padding: 10px;
+    }
+
+    .contact-form form {
+        padding: 0;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .contact-info {
+        box-shadow: 0 5px 10px #16C1B9;
+    }
+
+    .Descarga {
+        top: 0;
+    }
+
+    /**Pie de Pagina*/
+
+    footer {
         font-size: 18px;
     }
-    
-    .hijo {
-        padding: 140px 0 0 0;
-    }
-
-    .img-CJ {
-        width: 45%;
-        padding: 145px 0 0 35px;
-    }
-
-    header, header.abajo {
-        padding: 0 0;
-    }
-
-    .checkbtn {
-        display: block;
-    }
-
-    header {
-        height: 70px;
-        padding-right: 40px;
-        background-color: aqua;
-    }
-    
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        right: -100%;
-        top: 70px;
-        background-color: #48484b;
-        text-align: center;
-        transition: all 0.5s;
-        box-shadow: inset 0px 0 15px #fff;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 50px;
-        line-height: 40px;
-    }
-
-    #check:checked ~ ul {
-        right: 0;
-
-    }
-
-    li a.active, li a:hover {
-        color: #000000;
-        display: block;
-        background-color: none;
-        box-shadow: 0 0 25px 6px #186B8D;
-        text-shadow: none;
-    }
-    
-    .logo img {
-        height: 70px;
-        margin-right: 100px
-    }
- 
-}  
-
-/**Responsive para Móviles 
-@media screen and (max-width: 650px){
-
-    .padre {
-        font-size: 13px;
-    }
-    
-    .hijo {
-        padding: 140px 0 0 0;
-    }
-
-    .img-CJ {
-        width: 50%;
-        padding: 145px 0 0 30px;
-    }
-
-    header, header.abajo {
-        padding: 0 0;
-    }
-
-    .checkbtn {
-        display: block;
-    }
-
-    header {
-        height: 70px;
-        padding-right: 40px;
-        background-color: yellow;
-    }
-    
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        right: -100%;
-        top: 70px;
-        background-color: #48484b;
-        text-align: center;
-        transition: all 0.5s;
-        box-shadow: inset 0px 0 15px #fff;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 50px;
-        line-height: 40px;
-    }
-
-    #check:checked ~ ul {
-        right: 0;
-
-    }
-
-    li a.active, li a:hover {
-        color: #000000;
-        display: block;
-        background-color: none;
-        box-shadow: 0 0 25px 6px #186B8D;
-        text-shadow: none;
-    }
-    
-    .logo img {
-        height: 70px;
-        margin-right: 100px
-    }
- 
-}  
-
- Responsive para resoluciones mini
-@media screen and (max-width:300px){
-
-    .padre {
-        background-color: none;
-        display: flex;
-        align-items: center;
-        font-size: 5px;
-    }
-    
-    .hijo {
-        padding: 20px 0 0 0;
-    }
-
-    .img-CJ {
-        width: 35%;
-        padding: 20px 0 0 10px;
-    }
-
-    header, header.abajo {
-        padding: 0 0;
-    }
-
-    .checkbtn {
-        font-size: 25px;
-        display: block;
-        width: 3px;
-        padding-right: 30px;
-    }
-
-    header {
-        height: 50px;
-        padding-right: 10px;
-    }
-    
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        right: -100%;
-        top: 50px;
-        background-color: #48484b;
-        text-align: center;
-        transition: all 0.5s;
-        box-shadow: inset 0px 0 15px #fff;
-    }
-
-    nav ul li {
-        display:block;
-        margin: 0 0;
-        line-height: 1px;
-    }
-
-    nav ul li a {
-        font-size: 10px;
-        padding: 10px 50px;
-        margin: 0;
-    }
-
-    #check:checked ~ ul {
-        right: 0;
-
-    }
-
-    li a.active, li a:hover {
-        color: #000000;
-        display: block;
-        background-color: none;
-        box-shadow: 0 0 25px 6px #186B8D;
-        text-shadow: none;
-    }
-    
-    .logo img {
-        height: 50px;
-        margin: 0 0;
-    }   
 }
 
-*/
+/**RESPONSIVE Laptop*/
+@media screen and (max-width: 1024px) {
+
+    /**Menu e Inicio*/
+
+    h1 {
+        padding-left: 30px;
+    }
+
+    #inicio .contenido .presentacion {
+        padding: 50px;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /**Datos Personales*/
+
+    #datospersonales {
+        display: flex;
+    }
+
+    .derechaDP {
+        width: 75%;
+    }
+
+    #contenido-datospersonales {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        position: relative;
+        margin: 0 40px;
+        padding: 0 80px 0 40px;
+        top: 125px;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+
+    .ul-datos {
+        background-color: transparent;
+        width: 500px;
+        height: 600px;
+    }
+
+    .ul-datos li {
+        padding: 10px;
+    }
+
+
+    /**Formacion Academica*/
+
+    .form-acad {
+        font-size: 40px;
+        top: -5px;
+    }
+    
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        top: 250px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sliders {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        border: #16C1B9 solid 5px;
+        left: -110px;
+        top: -60px;
+        position: relative;
+    }
+
+    .ul-form {
+        top: 150px;
+        left: -100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ul-form li {
+        font-size: 20px;
+    }
+
+    /**Experiencia*/
+
+    .exper {
+        font-size: 45px;
+        padding: 90px;
+    }
+
+    .experiencia {
+        position: relative;
+        left: -40px;
+        font-size: 20px;
+    }
+
+    .experiencia li {
+        top: -15px;
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    /**Habilidades*/
+
+    .habi {
+        font-size: 40px;
+        left: -115px;
+        top: 130px;
+    }
+
+    .content-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenido-habilidades {
+        top: 170px;
+        left: 60px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .habilidades-ul {
+        position: relative;
+        left: -60px;
+        font-size: 20px;
+        padding: 20px 40px;
+        width: 600px;
+        height: 300px;
+    }
+
+    .img-habilidades {
+        top: 200px;
+        right: 5px;
+        bottom: 0;
+    }
+    
+    .img-habilidades ul li {
+        padding: 20px;
+    }
+
+
+    /**Contacto*/
+
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h2-contact {
+        position: relative;
+        top: -90px;
+        font-size: 40px;
+        padding-bottom: 0;
+    }
+
+    .contactame {
+        grid-template-columns: 1fr;
+        width: 600px;
+        height: 450px;
+        position: relative;
+        top: 100px;
+        font-size: 20px;
+    }
+
+    .contact-form form p {
+        padding: 10px;
+    }
+
+    .contact-form form {
+        padding: 0;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .contact-info {
+        box-shadow: 0 5px 10px #16C1B9;
+    }
+
+    .Descarga {
+        top: 0;
+    }
+
+    /**Pie de Pagina*/
+
+    footer {
+        font-size: 18px;
+    }
+
+}
+
+/**RESPONSIVE Laptop L*/
+@media screen and (max-width:1440px) {
+
+    /**Menu e Inicio*/
+
+    /**Datos Personales*/
+
+    .derechaDP {
+        width: 60%;
+    }
+
+    #contenido-datospersonales {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        position: relative;
+        margin: 0 40px;
+        padding: 0 80px 0 40px;
+        top: 125px;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+
+    .ul-datos {
+        background-color: transparent;
+        width: 500px;
+        height: 600px;
+    }
+
+    .ul-datos li {
+        padding: 10px;
+    }
+
+    /**Formacion Academica*/
+
+    .info {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    .ul-form li {
+        font-size: 22px;
+    }
+
+    .sliders {
+        width: 600px;
+        height: auto;
+    }
+
+    .años {
+        padding-bottom: 25px;
+    }
+
+    /**Habilidades*/
+
+
+}
+
+
