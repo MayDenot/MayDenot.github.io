@@ -19,21 +19,9 @@ const typed = new Typed('.typed',{
 	smartBackspace: true, 
 	shuffle: false, 
 	backDelay: 1000, 
-	loop: true, 
-	loopCount: false, 
+	loop: false, 
 	showCursor: true, 
 	cursorChar: '|', 
 	contentType: 'html', 
 });
 
-/** FUNCION PARA DESPLEGAR EL MENU DEL NAVEGADOR*/
-
-$(document).ready(main);
-
-var contador = 1 ;
-
-function main() {
-	$('#check').click(function(){
-		$('nav').toggle();
-	});
-};
