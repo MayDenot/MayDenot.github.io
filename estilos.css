@@ -604,19 +604,19 @@ footer h2 b {
         width: 80%;
         height: 60vh;
         top: 68px;
-        right: 0;
+        left: 0;
         background-color: #2A2929;
         text-align: center;
         transition: all .5s; 
     }
  
     nav ul li {
-        margin: 32px;
+        margin: 25px;
     }
 
     #inicio .contenido header .contenido-header nav ul li a {
         margin: 0;
-        padding: 20px
+        padding: 10px
     }
 
     #inicio .contenido .presentacion h2 {
@@ -775,10 +775,6 @@ footer h2 b {
 
     /*MENU E INICIO*/
 
-    #check:checked ~ nav {
-        display: flex;
-    }
-
     .checkbtn {
         display: block;
     }
@@ -788,24 +784,23 @@ footer h2 b {
     }
 
     nav {
-        display: none;
         position: fixed;
-        width: 70%;
-        height: 55vh;
+        width: 100%;
+        height: 100vh;
         top: 68px;
-        right: 0;
+        left: 0;
         background-color: #2A2929;
         text-align: center;
         transition: all .5s; 
     }
  
     nav ul li {
-        margin: 34px;
+        margin: 65px;
     }
 
     #inicio .contenido header .contenido-header nav ul li a {
-        margin: 0;
-        padding: 25px;
+        margin: 50px;
+        padding: 34px;
     }
 
     #inicio .contenido .presentacion h2 {
@@ -966,10 +961,6 @@ footer h2 b {
 
     /*MENU E INICIO*/
 
-    #check:checked ~ nav {
-        display: flex;
-    }
-
     .checkbtn {
         display: block;
     }
@@ -979,27 +970,27 @@ footer h2 b {
     }
 
     nav {
-        display: none;
         position: fixed;
-        width: 40%;
-        height: 55vh;
+        display: flex;
+        width: 100%;
+        height: 100vh;
         top: 68px;
-        right: 0;
+        left: 0;
         background-color: #2A2929;
         text-align: center;
         transition: all .5s; 
     }
  
     nav ul li {
-        margin: 20px;
+        margin: 0;
         display: flex !important;
         justify-content: center;
-        padding-left: 15px;
+        padding-left: 250px;
     }
 
     #inicio .contenido header .contenido-header nav ul li a {
-        margin: 0;
-        padding: 25px;
+        margin: 30px;
+        padding: 30px;
     }
 
     #inicio .contenido .presentacion h2 {
