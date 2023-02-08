@@ -377,7 +377,7 @@ li span {
     background: #1D1C1C;
     width: auto;
     height: 100vh;
-    padding: 50px;
+    padding: 20px;
     color: #fff;
     position: relative;
 }
@@ -473,8 +473,8 @@ li span {
 }
 
 .cont {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-content: center;
     position: relative;
     bottom: 200px;
 }
@@ -510,7 +510,7 @@ li span {
 
 /**SECCION PIE DE PAGINA*/
 
-footer {
+.footer {
     background-color: #16C1B9;
     width: 100%;
     height: 200px;
@@ -551,7 +551,7 @@ footer {
     transition: .3s;
 }
 
-footer h2 b {
+.footer h2 b {
     font-family: 'Arapey', serif;
     font-size: 40px;
     padding-left: 20px;
@@ -747,16 +747,16 @@ footer h2 b {
 
     .h2-contact {
         font-size: 35px;
-        top: -90px;
+        top: -80px;
     }
 
     .contactame {
         grid-template-columns: 1fr;
-        width: 95vw;
+        width: 80vw;
     }
 
     .cont {
-        bottom: 255px;
+        bottom: 250px;
     }
 
     .contact-info {
@@ -857,20 +857,23 @@ footer h2 b {
     /*FORMACION ACADEMICA*/
 
     .info {
+        place-content: center;
         grid-template-columns: 1fr;
         font-size: 20px;
-        justify-items: center;
         top: 130px;
     }
 
     .tmñ-sliders {
         width: 500px;
         padding: 0;
+        display: flex;
+        justify-self: center;
     }
 
     .ul-form {
+        display: grid;
+        justify-content: center;
         padding-top: 40px;
-        padding-left: 40px;
     }
 
     .ul-form li {
@@ -944,7 +947,7 @@ footer h2 b {
 
     .contactame {
         grid-template-columns: 1fr;
-        width: 95vw;
+        width: 80vw;
     }
 
     .cont {
@@ -979,9 +982,8 @@ footer h2 b {
     }
 
     .nav-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        place-content: center;
         position: fixed;
         width: 70%;
         height: 60vh;
@@ -997,14 +999,8 @@ footer h2 b {
     }
  
     nav ul li {
-        margin: 30px;
-        display: flex !important;
-        justify-content: center;
-    }
-
-    #inicio .contenido header .contenido-header nav ul li a {
-        margin: 0;
-        padding: 25px;
+        display: grid !important;
+        place-content: center;
     }
 
     #inicio .contenido .presentacion h2 {
@@ -1060,12 +1056,13 @@ footer h2 b {
 
     .tmñ-sliders {
         width: 650px;
-        padding: 0;
+        display: flex;
+        justify-self: center;
     }
 
     .ul-form {
-        padding-top: 40px;
-        padding-left: 70px;
+        display: grid;
+        justify-content: center;
     }
 
     .ul-form li {
@@ -1183,6 +1180,93 @@ footer h2 b {
         top: 80px;
     }
 
+    #contenido-datospersonales {
+        display: grid;
+        place-content: center;
+        margin: 0;
+        padding-left: 20px;
+        position: static;
+    }
+
+    /*FORMACION ACADEMICA*/
+
+    .info {
+        top: 90px;
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .tmñ-sliders {
+        width: 700px;
+        display: flex;
+        justify-self: center;
+    }
+
+    .ul-form {
+        display: grid;
+        justify-content: center;
+    }
+
+    /*HABILIDADES*/
+
+    .habi {
+        top: 130px;
+    }
+
+    .conteiner-habilidades {
+        top: 200px;
+    }
+
+    .habilidades-ul {
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+    /*MENU E INICIO*/
+
+    h1 {
+        padding-left: 20px;
+    }
+
+    nav {
+        font-size: 15px;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    #inicio .contenido .presentacion  {
+        padding: 100px;
+    }
+
+    /*DATOS PERSONALES*/
+
+    .izquierdaDP {
+        width: 50%;
+    }
+    
+    .derechaDP {
+        width: 50%;
+    }
+
+    .datosp {
+        top: 80px;
+    }
+
+    #contenido-datospersonales {
+        display: grid;
+        place-content: center;
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+
     /*FORMACION ACADEMICA*/
 
     .info {
@@ -1209,26 +1293,10 @@ footer h2 b {
 
     /*CONTACTO*/
 
-    .h2-contact {
-        top: -65px ;
-    }
-
-    .cont {
-        bottom: 200px;
-    }
-
     .contactame {
-        height: 90%;
+        height: 500px;
     }
-
-    .contact-form {
-        font-size: 20px;
-    }
-
-    .contact-info {
-        font-size: 20px;
-    }
-
+    
 }
 
 

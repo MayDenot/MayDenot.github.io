@@ -1,5 +1,5 @@
  
-/** FUNCION QUE, AL SCROLLEAR, AL HEADER LE BRINDA UN BOX-SHADOW */
+/** AL SCROLLEAR, AL HEADER LE BRINDA UN BOX-SHADOW */
 
 window.addEventListener('scroll', function (){
     var header = document.querySelector("header");
