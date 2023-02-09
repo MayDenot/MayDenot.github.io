@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: 'Oxanium', cursive;
+    font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -52,7 +52,8 @@ body {
 
 h1 {
     font-size: 2em;
-	color: #fff;
+	color: black;
+    padding-right: 10px;
 }
 
 #inicio .contenido header .contenido-header  nav ul li {
@@ -63,7 +64,6 @@ h1 {
 	text-decoration: none;
 	color: #fff;
 	margin: 0 12px;
-	font-weight: 400;
 	transition: 0.4s;
     text-shadow: 1px 1px 5px grey;
     overflow: hidden;
@@ -93,7 +93,7 @@ header.abajo {
 }
 
 #inicio .contenido .presentacion h2 {
-	font-size: 55px;
+	font-size: 50px;
 }
 
 .tit-present {
@@ -212,6 +212,8 @@ li span {
     padding-bottom: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #111111;
+    border-right: 3px solid #16C1B9;
+    border-bottom: 1px solid #16C1B9;
 }
 
 .info {
@@ -286,18 +288,18 @@ li span {
     text-decoration: none;
     list-style: none;
     font-size: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
 .año2 span {
-    color: #fff;
+    color: #16C1B9;
 }
 
 .exper {
     font-size: 50px;
     color: #16C1B9;
-    padding-top: 60px;
-    padding-left: 80px;
+    padding-top: 80px;
+    padding-left: 100px;
 }
 
 .experiencia {
@@ -308,37 +310,49 @@ li span {
     font-size: 25px;
 }
 
+.exp1,
+.exp2,
+.exp3 {
+    width: 80%;
+    background-color: #2A2929;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #16C1B9;
+    border-left: 5px solid #16C1B9;
+    box-shadow: 5px 5px 10px #111111;
+}
+
+
 /** SECCION "HABILIDADES"*/
 
 #habilidades {
-    background-color: #1D1C1C;
+    background-color: #000000;
     height: 100vh;
+    width: 100%;
 }
 
 .habi {
-    position: relative;
-    top: 130px;
     font-size: 50px;
     color: #16C1B9;
     text-align: center;
+    position: relative;
+    top: 130px;
 }
 
 .conteiner-habilidades {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 200px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .habilidades {
-    border: #16C1B9 solid 2px;
-    box-shadow: 5px 5px 15px #16C1B9;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: 70vw;
-    height: 100%;
-    padding: 20px 60px;
 }
 
 .habilidades-img ul {
@@ -346,10 +360,11 @@ li span {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 80px;
 }
 
 .habilidades-img ul li img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding: 10px;
 }
@@ -357,11 +372,8 @@ li span {
 .habilidades-ul {
     font-size: 25px;
     color: #fff;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    border-right: 1px solid #16C1B9;
+    padding-right: 80px;
 }
 
 .habilidades-ul li {
@@ -381,7 +393,7 @@ li span {
 
 .h2-contact {
     position: relative;
-    top: -70px;
+    top: -50px;
     padding-bottom: 200px;
     font-size: 50px;
     color: #16C1B9;
@@ -442,6 +454,10 @@ li span {
     color: #fff;
 }
 
+.block span {
+    font-weight: bold;
+}
+
 .contact-form form p {
     padding: 10px;
 }
@@ -491,6 +507,7 @@ li span {
     justify-content: center;
     text-transform: uppercase;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .CV-descarga:hover {
@@ -505,13 +522,21 @@ li span {
     position: relative;
 }
 
+
 /**SECCION PIE DE PAGINA*/
 
 .footer {
     background-color: #16C1B9;
     width: 100%;
-    height: 200px;
+    height: 400px;
     font-size: 15px;
+}
+
+.footer .wave-f {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 .contenedor-footer {
@@ -529,10 +554,10 @@ li span {
     list-style: none;
     text-decoration: none;
     color: #000000;
+    padding: 20px;
 }
 
 .contenedor-footer a i {
-    padding: 20px;
     font-size: 20px;
     border-radius: 20px;
 }
@@ -901,7 +926,7 @@ li span {
         font-size: 25px;
     }
 
-    /*HABILIDADES*/
+    /*HABILIDADES
 
     .habi {
         font-size: 40px;
