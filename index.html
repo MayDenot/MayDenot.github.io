@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" 
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="LogoD2.ico">
     <script src="https://kit.fontawesome.com/dc94cdf766.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,6 +17,16 @@
 <body>
     <!-- SECCION INICIO / HEADER-->
     <section id="inicio">
+
+        <div class="wave" style="height: 300px; overflow: hidden; opacity: 0.8;" ><svg viewBox="0 0 500 150" 
+            preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C141.36,-36.00 372.74,205.77 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+            style="stroke: none; fill: #C87115;"></path></svg></div>
+
+        <div class="wave" style="height: 300px; overflow: hidden;" ><svg viewBox="0 0 500 150" 
+        preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+        style="stroke: none; fill: #16C1B9;"></path></svg></div>
 
         <div class="contenido">
 
@@ -52,7 +63,10 @@
 
             <div class="presentacion">
 
-                <h2 class="tit-present">Hola! Mi nombre es <span id="name-color">Carl Johnson</span>, soy profesor de <span class="typed"></span></h2>
+                <h2 class="tit-present">Hola! Mi nombre es <span id="name-color">Carl Johnson</span>, 
+                <br> soy profesor de <span class="typed"></span></h2>
+
+                <img src="CARL - copia.png" alt="Retrato de Carl Johnson" class="carl">
 
             </div>
 
@@ -64,13 +78,9 @@
 
     <section id="datospersonales">
 
-        <div class="izquierdaDP"></div> 
-
-        <div class="derechaDP">
+        <h2 class="datosp">DATOS PERSONALES</h2> <br> <br>
 
             <div id="contenido-datospersonales">
-
-                <h2 class="datosp">DATOS PERSONALES</h2> <br> <br>
 
                     <ul class="ul-datos">
                         <li><u>Nombre/s:</u> <span>Carl.</span></li> 
@@ -82,9 +92,9 @@
                         <li><u>Email:</u> <span>carl.johnson@gmail.com.</span></li> 
                     </ul>
 
-            </div>
+                    <img src="DP2.png" class="img-DP">
 
-        </div>   
+            </div>
 
     </section>
 
@@ -113,12 +123,21 @@
                     </div> 
 
                     <ul class="ul-form">
-                        <li class="años"><span>2000-2005</span></li>
-                        <li><u>Título oficial</u>: <span> Doctorado de Historia.</span></li>
-                        <li><u>Lugar de estudio</u>: <span> Universidad del Norte de Texas, Denton.</span></li>  <br> 
-                        <li class="años"><span>2015-2019</span></li>
-                        <li><u>Título oficial</u>: <span> Licenciado en Ciencias de la Computación.</span></li>
-                        <li><u>Lugar de estudio</u>: <span> Universidad Mercer de Macon, Georgia.</span></li>
+
+                        <div class="titulo1">
+                            <li class="años"><span>2000-2005</span></li>
+                            <li><u>Título oficial</u>: <span> Doctorado de Historia.</span></li>
+                            <li><u>Lugar de estudio</u>: <span> Universidad del Norte de Texas, Denton.</span></li>
+                        </div>
+
+                        <br>
+
+                        <div class="titulo2">
+                            <li class="años"><span>2015-2019</span></li>
+                            <li><u>Título oficial</u>: <span> Licenciado en Ciencias de la Computación.</span></li>
+                            <li><u>Lugar de estudio</u>: <span> Universidad Mercer de Macon, Georgia.</span></li>
+                        </div>
+
                     </ul>
 
                 </div>

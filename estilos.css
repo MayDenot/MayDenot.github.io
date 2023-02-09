@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Oxanium', cursive;
 }
 
 html {
@@ -19,10 +19,15 @@ body {
 /** SECCION "INICIO"*/
 
 #inicio {
-	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("Fondo1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+	background-color: #1D1C1C;
+    height: 70%;
+    width: 100%;
+}
+
+#inicio .wave {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #inicio .contenido header {
@@ -75,18 +80,29 @@ header.abajo {
 }
 
 #inicio .contenido .presentacion {
-	height: 100vh;
-	margin: auto;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
     padding: 300px;
+    display: grid;
+    align-content: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 #inicio .contenido .presentacion h2 {
 	font-size: 55px;
-	margin-bottom: 25px;
+}
+
+.tit-present {
+    padding-left: 200px;
+}
+
+.carl {
+    border: #16C1B9 solid 5px;
+    padding: 0;
 }
 
 #name-color {
@@ -112,56 +128,27 @@ header.abajo {
 
 /** SECCION "DATOS PERSONALES"*/
 
-/**SECTION*/
 #datospersonales {
-    display: flex;
-}
-
-.izquierdaDP {
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("CARL.png");
-    background-size: cover;
-    background-position: center;
+    background-color: #16C1B9;
+    width: 100vw;
     height: 100vh;
-    width: 50%;
-    display: flex;
 }
 
-.derechaDP {
-    background-color: #C87115;
-    display: flex;
-    height: 100vh;
-    width: 50%;
-}
-
-/** TITULO DE LOS DATOS PERSONALES DEL CV*/
 .datosp {
     position: relative;
-    top: 50px;
-    left: -20px;
-    color: #fff;
+    color: #000000;
     font-size: 50px;
-    display: flex;
-    text-align: right;
-    justify-content: flex-start;
+    top: 125px;
+    left: 200px;
 }
 
-/** LOS DATOS PERSONALES DEL CV*/
 .ul-datos {
-    position: relative;
-    top: 30px;
-    color: #5F3304;
+    color: #582F04;
     font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 500px;
-    height: 600px;
 }
 
 .ul-datos li {
-    padding: 10px;
-    position: relative;
-    bottom: -100px;
+    padding: 5px;
 }
 
 li span {
@@ -169,15 +156,12 @@ li span {
 }
 
 #contenido-datospersonales {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
     position: relative;
-    left: 80px;
-    width: 100%;
-    height: 100%; 
-    margin: 0 40px; 
+    top: 100px;
 }
 
 /** SECCION "FORMACION ACADEMICA"*/
@@ -199,12 +183,12 @@ li span {
 .ul-form {
     width: 100%;
     height: auto;
-    padding-left: 25px;
     position: relative;
+    right: 50px;
 }
 
 .ul-form li {
-    font-size: 27px;
+    font-size: 22px;
     color: #16C1B9;
 }
 
@@ -216,7 +200,18 @@ li span {
     text-decoration: none;
     list-style: none;
     font-size: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
+}
+
+.titulo1,
+.titulo2 {
+    width: 80%;
+    background-color: #2A2929;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #111111;
 }
 
 .info {
@@ -236,11 +231,13 @@ li span {
     width: 750px;
     height: 100%;
     padding: 20px;
+    z-index: 2;
 }
 
 .sliders {
     overflow: hidden;
     border: #16C1B9 solid 5px;
+    border-radius: 5px;
 }
 
 .sliders ul {
@@ -580,11 +577,11 @@ li span {
     justify-content: center;
 }
 
-/*RESPONSIVE MÓVIL*/
+/*RESPONSIVE MÓVIL
 
 @media screen and (min-width: 320px) and (max-width: 499px) {
 
-    /*MENU E INICIO*/
+    /*MENU E INICIO
 
     .checkbtn {
         display: block;
@@ -630,7 +627,7 @@ li span {
         padding: 40px;
     }
 
-    /*DATOS PERSONALES*/
+    /*DATOS PERSONALES
 
     #datospersonales {
         flex-direction: column-reverse;
@@ -663,7 +660,7 @@ li span {
         font-size: 15px;
     }
 
-    /*FORMACION ACADEMICA*/
+    /*FORMACION ACADEMICA
 
     .form-acad {
         font-size: 30px;
@@ -692,7 +689,7 @@ li span {
         font-size: 20px;
     }
 
-    /*EXPERIENCIA*/
+    /*EXPERIENCIA
 
     .exper {
        font-size: 30px; 
@@ -708,7 +705,7 @@ li span {
         font-size: 23px;
     }
 
-    /*HABILIDADES*/
+    /*HABILIDADES
 
     .habi {
         font-size: 30px;
@@ -743,7 +740,7 @@ li span {
         padding: 5px;
     }
 
-    /*CONTACTO*/
+    /*CONTACTO
 
     .h2-contact {
         font-size: 35px;
@@ -771,11 +768,11 @@ li span {
 
 }
 
-/*RESPONSIVE TABLET MINI*/
+/*RESPONSIVE TABLET MINI
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
 
-    /*MENU E INICIO*/
+    /*MENU E INICIO
 
     .checkbtn {
         display: block;
@@ -821,7 +818,7 @@ li span {
         padding: 40px;
     }
 
-    /*DATOS PERSONALES*/
+    /*DATOS PERSONALES
 
     #datospersonales {
         flex-direction: column-reverse;
@@ -854,7 +851,7 @@ li span {
         font-size: 15px;
     }
 
-    /*FORMACION ACADEMICA*/
+    /*FORMACION ACADEMICA
 
     .info {
         place-content: center;
@@ -886,7 +883,7 @@ li span {
         top: 100px;
     }
 
-    /*EXPERIENCIA*/
+    /*EXPERIENCIA
 
     .exper {
         font-size: 40px;
@@ -939,7 +936,7 @@ li span {
         padding: 5px;
     }
 
-    /*CONTACTO*/
+    /*CONTACTO
 
     .h2-contact {
         top: -70px;
@@ -967,11 +964,11 @@ li span {
 }
 
 
-/*RESPONSIVE TABLET*/
+/*RESPONSIVE TABLET
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
 
-    /*MENU E INICIO*/
+    /*MENU E INICIO
 
     .checkbtn {
         display: block;
@@ -1012,7 +1009,7 @@ li span {
         padding: 40px;
     }
 
-    /*DATOS PERSONALES*/
+    /*DATOS PERSONALES
 
     #datospersonales {
         flex-direction: column-reverse;
@@ -1045,7 +1042,7 @@ li span {
         font-size: 22px;
     }
 
-    /*FORMACION ACADEMICA*/
+    /*FORMACION ACADEMICA
 
     .info {
         grid-template-columns: 1fr;
@@ -1075,7 +1072,7 @@ li span {
         top: 100px;
     }
 
-    /*EXPERIENCA*/
+    /*EXPERIENCA
 
     .exper {
         font-size: 45px;
@@ -1086,7 +1083,7 @@ li span {
         padding-left: 50px;
     }
 
-    /*HABILIDADES*/
+    /*HABILIDADES
 
     .habi {
         font-size: 45px;
@@ -1121,7 +1118,7 @@ li span {
         padding: 5px;
     }
 
-    /*CONTACTO*/
+    /*CONTACTO
 
     .h2-contact {
         font-size: 45px;
@@ -1143,11 +1140,11 @@ li span {
 
 }
 
-/*RESPONSIVE DESKTOP*/
+/*RESPONSIVE DESKTOP
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
 
-    /*MENU E INICIO*/
+    /*MENU E INICIO
 
     h1 {
         padding-left: 20px;
@@ -1166,7 +1163,7 @@ li span {
         padding: 100px;
     }
 
-    /*DATOS PERSONALES*/
+    /*DATOS PERSONALES
 
     .izquierdaDP {
         width: 40%;
@@ -1188,7 +1185,7 @@ li span {
         position: static;
     }
 
-    /*FORMACION ACADEMICA*/
+    /*FORMACION ACADEMICA
 
     .info {
         top: 90px;
@@ -1208,7 +1205,7 @@ li span {
         justify-content: center;
     }
 
-    /*HABILIDADES*/
+    /*HABILIDADES
 
     .habi {
         top: 130px;
@@ -1226,7 +1223,7 @@ li span {
 
 @media screen and (min-width: 1201px) {
 
-    /*MENU E INICIO*/
+    /*MENU E INICIO
 
     h1 {
         padding-left: 20px;
@@ -1245,7 +1242,7 @@ li span {
         padding: 100px;
     }
 
-    /*DATOS PERSONALES*/
+    /*DATOS PERSONALES
 
     .izquierdaDP {
         width: 50%;
@@ -1264,10 +1261,9 @@ li span {
         place-content: center;
         margin: 0;
         padding: 0;
-        position: static;
     }
 
-    /*FORMACION ACADEMICA*/
+    /*FORMACION ACADEMICA
 
     .info {
         top: 90px;
@@ -1277,7 +1273,7 @@ li span {
         padding: 0 25px;
     }
 
-    /*HABILIDADES*/
+    /*HABILIDADES
 
     .habi {
         top: 130px;
@@ -1291,7 +1287,7 @@ li span {
         font-size: 19px;
     }
 
-    /*CONTACTO*/
+    /*CONTACTO
 
     .contactame {
         height: 500px;
@@ -1299,4 +1295,5 @@ li span {
     
 }
 
+*/
 
