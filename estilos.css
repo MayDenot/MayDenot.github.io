@@ -52,27 +52,43 @@ body {
 
 h1 {
     font-size: 2em;
-	color: black;
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
     padding-right: 10px;
 }
 
-#inicio .contenido header .contenido-header  nav ul li {
+#inicio .contenido header .contenido-header nav ul li {
     display: inline-block;
 }
 
-#inicio .contenido header .contenido-header  nav ul li a {
+#inicio .contenido header .contenido-header nav ul li a {
 	text-decoration: none;
 	color: #fff;
 	margin: 0 12px;
-	transition: 0.4s;
-    text-shadow: 1px 1px 5px grey;
     overflow: hidden;
-    padding: 30px 15px 24px 15px;
+    padding: 0 5px;
+    position: relative;
 }
 
-#inicio .contenido header .contenido-header  nav ul li a:hover {
-	background-color: none;
-    box-shadow: inset 0px 0 25px #fff;
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #F99831;
+    transition: 0.5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a::after {
+    content: "";
+    background-color: #F99831;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover::after {
+    opacity: 1;
 }
 
 header.abajo {
@@ -136,33 +152,49 @@ header.abajo {
 
 .datosp {
     position: relative;
-    color: #000000;
+    color: #1D1C1C;
     font-size: 50px;
     top: 125px;
-    left: 200px;
+    text-align: center;
 }
 
-.ul-datos {
-    color: #582F04;
-    font-size: 25px;
+.list-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.ul-datos li {
-    padding: 5px;
+.list-datos li {
+    padding: 10px;
+    font-size: 22px;
+} 
+
+.list-datos li span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1D1C1C;
 }
 
-li span {
-    color: #fff ;
+.conteiner-DP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -70px;
 }
 
 #contenido-datospersonales {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     align-items: center;
-    position: relative;
-    top: 100px;
+    border-radius: 15px;
+    background-color: #E58929;
+    box-shadow: 5px 6px 15px #4A4848;
+    padding: 0 50px;
 }
+
 
 /** SECCION "FORMACION ACADEMICA"*/
 
