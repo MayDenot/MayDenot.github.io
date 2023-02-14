@@ -239,10 +239,8 @@ header.abajo {
 }
 
 .ul-form {
-    width: 100%;
+    width: 90vw;
     height: auto;
-    position: relative;
-    left: 20px;
     padding-top: 20px;
 }
 
@@ -263,19 +261,23 @@ header.abajo {
 
 .titulo1 {
     height: auto;
-    width: 90%;
+    width: 90vw;
     background-color: #2A2929;
     padding-left: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #111111;
     border-bottom: 1px solid #16C1B9;
 }
 
+.ul-form .titulo1 li {
+    padding: 2px;
+}
+
 .titulo2 {
     height: auto;
-    width: 90%;
+    width: 90vw;
     background-color: #2A2929;
     padding-left: 30px;
     padding-top: 5px;
@@ -286,11 +288,12 @@ header.abajo {
 }
 
 .info {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     position: relative;
-    top: 100px;
-    font-size: 14px;
+    top: 90px;
 }
 
 .tmñ-sliders {
@@ -415,43 +418,32 @@ header.abajo {
     color: #16C1B9;
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 110px;
 }
 
 .conteiner-habilidades {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .habilidades {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    position: relative;
-    top: 120px;
-    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .habilidades-ul {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
-    width: 90vw;
-    padding-bottom: 10px;
+    padding: 0 30px;
+    padding-bottom: 20px;
 }
 
 .habilidades-ul li {
-    padding: 8px;
-}
-
-.content-img {
-    padding-top: 10px;
-}
-
-.habilidades-img {
-    position: relative;
-    right: 20px;
-    border-top: 1px solid #16C1B9;
+    padding: 5px;
 }
 
 .habilidades-img ul {
@@ -459,6 +451,8 @@ header.abajo {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid #16C1B9;
+    padding-top: 10px;
 }
 
 .habilidades-img ul li {
@@ -468,9 +462,7 @@ header.abajo {
 .habilidades-img ul li img {
     width: 80%;
     height: 100%;
-    padding: 10px;
 }
-
 
 /** SECCION "CONTACTO"*/
 
@@ -484,7 +476,7 @@ header.abajo {
 
 .h2-contact {
     position: relative;
-    top: -50px;
+    top: -65px;
     font-size: 30px;
     color: #16C1B9;
     text-align: center;
@@ -498,12 +490,12 @@ header.abajo {
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
-    margin: 0 0 1rem 0;
+    padding-bottom: 10px;
 }
 
 .contact-info ul {
     list-style: none;
-    padding: 0;
+    padding-bottom: 10px;
 }
 
 .contact-info ul li {
@@ -514,14 +506,8 @@ header.abajo {
     color: #16C1B9;
 }
 
-
-.contact-form {
-    padding:0;
-}
-
 .contact-form form {
-    margin: 0;
-    padding: 0;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -555,7 +541,6 @@ header.abajo {
     border: 0;
     color: #000000;
     text-transform: uppercase;
-    padding: 16px;
 }
 
 .contact-form form button:hover {
@@ -566,7 +551,7 @@ header.abajo {
 
 .contactame {
     width: 90vw;
-    height: 600px;
+    height: 100%;
     background-color: #2A2929;
     box-shadow: 0 0 15px #16C1B9;
     display: grid;
@@ -577,6 +562,8 @@ header.abajo {
     display: flex;
     place-content: center;
     font-size: 14px;
+    position: relative;
+    top: -50px;
 }
 
 .content2 {
@@ -616,7 +603,7 @@ header.abajo {
     background-color: #16C1B9;
     width: 100%;
     height: 400px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .footer .wave-f {
@@ -645,7 +632,7 @@ header.abajo {
 }
 
 .contenedor-footer a i {
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 20px;
 }
 
@@ -662,7 +649,7 @@ header.abajo {
 
 .footer h2 b {
     font-family: 'Arapey', serif;
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 20px;
 }
 
