@@ -20,8 +20,8 @@ body {
 
 #inicio {
 	background-color: #1D1C1C;
-    height: 70%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 #inicio .wave {
@@ -55,18 +55,50 @@ h1 {
     -webkit-text-stroke: 1px #fff;
     color: #fff;
     padding-right: 10px;
+    margin-left: 20px;
+}
+
+.checkbtn {
+    display: block;
+    font-size: 30px;
+	color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 80%;
+    height: 70vh;
+    top: 69px;
+    right: -100%;
+    background-color: #2A2929;
+    text-align: center;
+    transition: all 1s; 
+}
+
+.menu-visible {
+    right: 0;
 }
 
 #inicio .contenido header .contenido-header nav ul li {
-    display: inline-block;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-size: 15px;
 }
 
 #inicio .contenido header .contenido-header nav ul li a {
 	text-decoration: none;
 	color: #fff;
-	margin: 0 12px;
     overflow: hidden;
-    padding: 0 5px;
     position: relative;
 }
 
@@ -96,28 +128,26 @@ header.abajo {
 }
 
 #inicio .contenido .presentacion {
-    height: 100vh;
-    margin: auto;
     color: #fff;
-    padding: 300px;
-    display: grid;
-    align-content: center;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    padding: 0 50px;
 }
 
 #inicio .contenido .presentacion h2 {
-	font-size: 50px;
+	font-size: 20px;
 }
 
 .tit-present {
-    padding-left: 200px;
+    padding-bottom: 15px;
 }
 
 .carl {
-    border: #16C1B9 solid 5px;
+    border: #16C1B9 solid 3px;
+    width: 70vw;
     padding: 0;
 }
 
@@ -127,15 +157,6 @@ header.abajo {
 
 .soy {
 	color: #16C1B9;
-}
-
-.checkbtn {
-    font-size: 30px;
-	color: #fff;
-    float: right;
-    display: none;
-    cursor: pointer;
-    margin-right: 20px;
 }
 
 #check {
@@ -153,8 +174,8 @@ header.abajo {
 .datosp {
     position: relative;
     color: #1D1C1C;
-    font-size: 50px;
-    top: 125px;
+    font-size: 30px;
+    top: 90px;
     text-align: center;
 }
 
@@ -166,33 +187,39 @@ header.abajo {
 
 .list-datos li {
     padding: 10px;
-    font-size: 22px;
+    font-size: 14px;
 } 
 
 .list-datos li span {
-    font-size: 22px;
+    font-size: 14px;
     font-weight: bold;
     color: #1D1C1C;
 }
 
 .conteiner-DP {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 90%;
+    height: 80%;
     position: relative;
-    top: -70px;
+    top: 60px;
+    left: 18px;
 }
 
 #contenido-datospersonales {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     border-radius: 15px;
     background-color: #E58929;
     box-shadow: 5px 6px 15px #4A4848;
-    padding: 0 50px;
+    width: 90vw;
+    height: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.img-DP {
+    width: 200px;
 }
 
 
@@ -204,23 +231,23 @@ header.abajo {
 }
 
 .form-acad {
-    font-size: 50px;
+    font-size: 30px;
     color: #16C1B9;
     text-align: center;
-    padding-top: 100px;
-    top: 50px;
     position: relative;
+    top: 90px;
 }
 
 .ul-form {
     width: 100%;
     height: auto;
     position: relative;
-    right: 50px;
+    left: 20px;
+    padding-top: 20px;
 }
 
 .ul-form li {
-    font-size: 22px;
+    font-size: 14px;
     color: #16C1B9;
 }
 
@@ -231,46 +258,51 @@ header.abajo {
 .años {
     text-decoration: none;
     list-style: none;
-    font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
-.titulo1,
-.titulo2 {
-    width: 80%;
+.titulo1 {
+    height: auto;
+    width: 90%;
     background-color: #2A2929;
-    padding-left: 80px;
-    padding-top: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
     padding-bottom: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #111111;
-    border-right: 3px solid #16C1B9;
+    border-bottom: 1px solid #16C1B9;
+}
+
+.titulo2 {
+    height: auto;
+    width: 90%;
+    background-color: #2A2929;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #111111;
     border-bottom: 1px solid #16C1B9;
 }
 
 .info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    justify-items: end;
-    width: 100%;
-    height: auto;
+    grid-template-columns: 1fr;
     position: relative;
-    top: 150px;
-    font-size: 25px;
+    top: 100px;
+    font-size: 14px;
 }
 
 .tmñ-sliders {
-    width: 750px;
-    height: 100%;
-    padding: 20px;
+    margin: 0 20px;
+    width: 300px;
     z-index: 2;
+    padding-bottom: 10px;
 }
 
 .sliders {
     overflow: hidden;
-    border: #16C1B9 solid 5px;
+    border: #16C1B9 solid 3px;
     border-radius: 5px;
 }
 
@@ -319,8 +351,8 @@ header.abajo {
 .año2 {
     text-decoration: none;
     list-style: none;
-    font-size: 30px;
-    padding-bottom: 25px;
+    font-size: 14px;
+    padding-bottom: 5px;
 }
 
 .año2 span {
@@ -328,28 +360,41 @@ header.abajo {
 }
 
 .exper {
-    font-size: 50px;
+    font-size: 30px;
     color: #16C1B9;
-    padding-top: 80px;
-    padding-left: 100px;
+    text-align: center;
+    position: relative;
+    top: 40px;
 }
 
 .experiencia {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 100px;
-    font-size: 25px;
+    font-size: 14px;
+    position: relative;
+    left: 15px;
 }
 
 .exp1,
-.exp2,
-.exp3 {
-    width: 80%;
+.exp2 {
+    width: 90%;
     background-color: #2A2929;
-    padding-left: 80px;
+    padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #16C1B9;
+    border-left: 5px solid #16C1B9;
+    box-shadow: 5px 5px 10px #111111;
+}
+
+.exp3 {
+    width: 90%;
+    background-color: #2A2929;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #16C1B9;
     border-left: 5px solid #16C1B9;
@@ -366,25 +411,47 @@ header.abajo {
 }
 
 .habi {
-    font-size: 50px;
+    font-size: 30px;
     color: #16C1B9;
     text-align: center;
     position: relative;
-    top: 130px;
+    top: 100px;
 }
 
 .conteiner-habilidades {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .habilidades {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+
+.habilidades-ul {
+    font-size: 14px;
+    color: #fff;
+    width: 90vw;
+    padding-bottom: 10px;
+}
+
+.habilidades-ul li {
+    padding: 8px;
+}
+
+.content-img {
+    padding-top: 10px;
+}
+
+.habilidades-img {
+    position: relative;
+    right: 20px;
+    border-top: 1px solid #16C1B9;
 }
 
 .habilidades-img ul {
@@ -392,7 +459,10 @@ header.abajo {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 80px;
+}
+
+.habilidades-img ul li {
+    text-align: center;
 }
 
 .habilidades-img ul li img {
@@ -401,16 +471,6 @@ header.abajo {
     padding: 10px;
 }
 
-.habilidades-ul {
-    font-size: 25px;
-    color: #fff;
-    border-right: 1px solid #16C1B9;
-    padding-right: 80px;
-}
-
-.habilidades-ul li {
-    padding: 10px;
-}
 
 /** SECCION "CONTACTO"*/
 
@@ -418,7 +478,6 @@ header.abajo {
     background: #1D1C1C;
     width: auto;
     height: 100vh;
-    padding: 20px;
     color: #fff;
     position: relative;
 }
@@ -426,12 +485,9 @@ header.abajo {
 .h2-contact {
     position: relative;
     top: -50px;
-    padding-bottom: 200px;
-    font-size: 50px;
+    font-size: 30px;
     color: #16C1B9;
-    display: flex;
     text-align: center;
-    justify-content: center;
 }
 
 .contact-info {
@@ -460,12 +516,12 @@ header.abajo {
 
 
 .contact-form {
-    padding: 20px;
+    padding:0;
 }
 
 .contact-form form {
     margin: 0;
-    padding: 16px;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -509,19 +565,18 @@ header.abajo {
 }
 
 .contactame {
-    width: 50vw;
+    width: 90vw;
     height: 600px;
     background-color: #2A2929;
     box-shadow: 0 0 15px #16C1B9;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr;
 }
 
 .cont {
-    display: grid;
+    display: flex;
     place-content: center;
-    position: relative;
-    bottom: 200px;
+    font-size: 14px;
 }
 
 .content2 {
@@ -538,7 +593,7 @@ header.abajo {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -634,194 +689,55 @@ header.abajo {
     justify-content: center;
 }
 
-/*RESPONSIVE MÓVIL
+/* RESPONSIVE DESKTOP 
 
-@media screen and (min-width: 320px) and (max-width: 499px) {
+@media screen and (max-width:1440px) {
 
     /*MENU E INICIO
 
-    .checkbtn {
-        display: block;
-    }
-
-    h1 {
-        margin-left: 20px;
-    }
-
-    .nav-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        width: 80%;
-        height: 60vh;
-        top: 68px;
-        right: -100%;
-        background-color: #2A2929;
-        text-align: center;
-        transition: all 1s; 
-    }
-
-    .menu-visible {
-        right: 0;
-    }
- 
-    nav ul li {
-        margin: 32px;
-    }
-
-    #inicio .contenido header .contenido-header nav ul li a {
-        margin: 0;
-        padding: 20px
-    }
-
-    #inicio .contenido .presentacion h2 {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    #inicio .contenido .presentacion  {
-        padding: 40px;
-    }
-
-    /*DATOS PERSONALES
-
-    #datospersonales {
-        flex-direction: column-reverse;
-    }
-
-    .izquierdaDP {
-        height: 50vh;
-        width: 100%;
-    }
-
-    .derechaDP {
-        height: 50vh;
-        width: 100%;
-    }
-
-    #contenido-datospersonales {
-        text-align: center;
-        position: relative;
-        left: 40px;
-        margin: 0;
-    }
-
-    .datosp {
-        font-size: 25px;
-        top: 100px;
-    }
-
-    .ul-datos {
-        top: -20px;
-        font-size: 15px;
+    .tit-present {
+        padding-left: 0;
     }
 
     /*FORMACION ACADEMICA
 
-    .form-acad {
-        font-size: 30px;
-        padding: 0 5px;
-        top: 100px;
-    }
-
-    .info {
-        grid-template-columns: 1fr;
-        font-size: 15px;
-        justify-items: center;
-        top: 130px;
-    }
-
-    .tmñ-sliders {
-        width: 300px;
-        padding: 0;
-    }
-
-    .ul-form {
-        padding-top: 30px;
-        padding-left: 40px;
-    }
-
-    .ul-form li {
-        font-size: 20px;
+    .titulo1,
+    .titulo2 {
+        width: 100%;
     }
 
     /*EXPERIENCIA
 
     .exper {
-       font-size: 30px; 
-       padding-top: 30px;
+        padding-top: 70px;
     }
 
     .experiencia {
-        padding-left: 40px;
-        font-size: 20px;
+        position: relative;
+        top: -20px;
     }
 
-    .año2 {
-        font-size: 23px;
+    .exp1 {
+        width: 90%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 40px
     }
 
-    /*HABILIDADES
-
-    .habi {
-        font-size: 30px;
-        top: 100px;
+    .exp2 {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px
     }
 
-    .conteiner-habilidades {
-        top: 150px;
+    .exp3 {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px
     }
 
-    .habilidades {
-        flex-direction: column;
-        width: 85vw;
-        height: 70%;
-        padding: 20px 60px;
-    }
-
-    .habilidades-ul {
-        font-size: 15px;
-        text-align: start;
-    }
-
-    .content-img {
-        display: flex;
-    }
-
-    .habilidades-img ul {
-        grid-template-columns: auto auto auto;
-    }
-
-    .habilidades-ul li {
-        padding: 5px;
-    }
-
-    /*CONTACTO
-
-    .h2-contact {
-        font-size: 35px;
-        top: -80px;
-    }
-
-    .contactame {
-        grid-template-columns: 1fr;
-        width: 80vw;
-    }
-
-    .cont {
-        bottom: 250px;
-    }
-
-    .contact-info {
-        box-shadow: 1px 1px 10px #16C1B9;
-    }
-
-    .contact-form form {
-        margin: 0;
-        padding: 0;
-        font-size: 15px;
-    }
 
 }
 
