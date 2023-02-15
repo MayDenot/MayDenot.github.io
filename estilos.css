@@ -1099,7 +1099,10 @@ header.abajo {
     }
 
     .habilidades {
+        display: flex;
         flex-direction: row;
+        align-content: center;
+        justify-content: center;
     }
 
     .habilidades-ul {
@@ -1183,6 +1186,8 @@ header.abajo {
     .habi {
         font-size: 50px;
     }
+
+
 
     /*CONTACTO*/
 
