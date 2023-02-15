@@ -147,7 +147,7 @@ header.abajo {
 
 .carl {
     border: #16C1B9 solid 3px;
-    width: 70vw;
+    width: 100%;
     padding: 0;
 }
 
@@ -733,8 +733,8 @@ header.abajo {
         padding: 10px 35px;
     }
 
-    #inicio .contenido .presentacion img {
-        width: 60vw;
+    .carl {
+        width: 80%;
     }
 
     /*DATOS PERSONALES*/
@@ -804,6 +804,10 @@ header.abajo {
 
     #inicio .contenido .presentacion {
         top: 170px;
+    }
+
+    .carl {
+        width: 80%;
     }
 
     /*DATOS PERSONALES*/
@@ -985,8 +989,8 @@ header.abajo {
         text-align: left;
     }
 
-    #inicio .contenido .presentacion img {
-        width: 40vw;
+    .carl {
+        width: 70%;
     }
 
     /*DATOS PERSONALES*/
