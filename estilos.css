@@ -676,21 +676,21 @@ header.abajo {
     justify-content: center;
 }
 
-/* RESPONSIVE DESKTOP*/ 
+/*RESPONSIVE MOVIL M*/
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width: 375px) {
 
-    /*MENU E INICIO*/
+    /*FORMACION ACADEMICA*/
 
-    .tit-present {
-        padding-left: 0;
+    .form-acad {
+        padding: 0 10px;
     }
 
     .info {
         top: 100px;
     }
 
-    /*EXPERIENCIA*/
+    /*HABILIDADES*/
 
     .habilidades {
         position: relative;
@@ -716,6 +716,7 @@ header.abajo {
     .footer {
         font-size: 14px;
     }
+
 }
 
 /*RESPONSIVE MOVIL L*/
@@ -725,29 +726,23 @@ header.abajo {
     /*MENU E INICIO*/
 
     #inicio .contenido .presentacion h2 {
-        margin: 0;
-        font-size: 30px;
+        font-size: 22px;
     }
 
-    #inicio .contenido .presentacion  {
-        padding: 40px;
+    #inicio .contenido .presentacion {
+        align-items: center;
+        top: 110px;
+    }
+
+    #inicio .contenido .presentacion .tit-present {
+        padding: 10px 35px;
+    }
+
+    #inicio .contenido .presentacion img {
+        width: 60vw;
     }
 
     /*DATOS PERSONALES*/
-
-    #datospersonales {
-        flex-direction: column-reverse;
-    }
-
-    .izquierdaDP {
-        height: 50vh;
-        width: 100%;
-    }
-
-    .derechaDP {
-        height: 50vh;
-        width: 100%;
-    }
 
     .list-datos li {
         font-size: 15px;
@@ -776,18 +771,6 @@ header.abajo {
         font-size: 15px;
     }
 
-    .content-img {
-        display: flex;
-    }
-
-    .habilidades-img ul {
-        grid-template-columns: auto auto auto;
-    }
-
-    .habilidades-ul li {
-        padding: 5px;
-    }
-
     /*CONTACTO*/
 
     .h2-contact {
@@ -805,9 +788,9 @@ header.abajo {
 
 }
 
-/*RESPONSIVE DESKTOP*/
+/*RESPONSIVE TABLET*/
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 768px) {
 
     /*MENU E INICIO*/
     /*DATOS PERSONALES*/
@@ -815,6 +798,61 @@ header.abajo {
     /*EXPERIENCIA*/
     /*HABILIDADES*/
     /*CONTACTO*/
+
+    .contactame {
+        grid-template-columns: 2fr 1fr;
+        width: 90vw;
+        height: 600px;
+    }
+
+    .contact-form form {
+        padding: 16px;
+    }
+
+    .contact-form form button span {
+        font-size: 18px;
+    }
+
+    .CV-descarga {
+        font-size: 18px;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        font-size: 20px;
+    }
+
+    .footer h2 b {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+}
+
+/*RESPONSIVE DESKTOP L*/
+
+@media screen and (min-width:0px) {
+
+    /*MENU E INICIO*/
+    /*DATOS PERSONALES*/
+    /*FORMACION ACADEMICA*/
+    /*EXPERIENCIA*/
+    /*HABILIDADES*/
+    /*CONTACTO*/
+
+}
+
+
+
+@media screen and (min-width:0px) {
+
+    /*MENU E INICIO*/
+    /*DATOS PERSONALES*/
+    /*FORMACION ACADEMICA*/
+    /*EXPERIENCIA*/
+    /*HABILIDADES*/
+    /*CONTACTO*/
+
 }
 
 /*RESPONSIVE DESKTOP L*/
