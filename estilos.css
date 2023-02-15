@@ -976,7 +976,7 @@ header.abajo {
     }
     
     #inicio .contenido .presentacion .tit-present {
-        padding: 0;
+        padding-right: 110px;
         text-align: left;
     }
 
