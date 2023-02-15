@@ -757,6 +757,10 @@ header.abajo {
 
     /*HABILIDADES*/
 
+    .habilidades {
+        width: 100%;
+    }
+
     .habilidades-ul {
         font-size: 15px;
     }
@@ -896,7 +900,7 @@ header.abajo {
     }
 
     .content-img .habilidades-img ul {
-        width: 55vw;
+        width: 450px;
     }
 
 
@@ -915,7 +919,7 @@ header.abajo {
 
     .contactame {
         grid-template-columns: 2fr 1fr;
-        width: 90vw;
+        width: 80vw;
         height: 600px;
     }
 
@@ -1128,6 +1132,7 @@ header.abajo {
 
     .contactame {
         height: 450px;
+        width: 70vw;
     }
 
     /*FOOTER*/
@@ -1155,14 +1160,35 @@ header.abajo {
 
 @media screen and (min-width: 1440px) {
 
-    /*MENU E INICIO*/
-
-
-    /*DATOS PERSONALES*/
-    /*FORMACION ACADEMICA*/
     /*EXPERIENCIA*/
+
+    .exper {
+        font-size: 50px;
+    }
+
+    .año2 {
+        font-size: 25px;
+    }
+
+    .experiencia {
+        font-size: 25px;
+    }
+
+    .exp3 {
+        padding-bottom: 10px;
+    }
+
     /*HABILIDADES*/
+
+    .habi {
+        font-size: 50px;
+    }
+
     /*CONTACTO*/
+
+    .h2-contact {
+        font-size: 50px;
+    }
 
 }
 
