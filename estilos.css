@@ -147,7 +147,6 @@ header.abajo {
 
 .carl {
     border: #16C1B9 solid 3px;
-    width: 100%;
     padding: 0;
 }
 
@@ -733,10 +732,6 @@ header.abajo {
         padding: 10px 35px;
     }
 
-    .carl {
-        width: 80%;
-    }
-
     /*DATOS PERSONALES*/
 
     .list-datos li {
@@ -804,10 +799,6 @@ header.abajo {
 
     #inicio .contenido .presentacion {
         top: 170px;
-    }
-
-    .carl {
-        width: 80%;
     }
 
     /*DATOS PERSONALES*/
@@ -989,10 +980,6 @@ header.abajo {
         text-align: left;
     }
 
-    .carl {
-        width: 70%;
-    }
-
     /*DATOS PERSONALES*/
 
     .datosp {
@@ -1164,11 +1151,13 @@ header.abajo {
 
 }
 
+/*RESPONSIVE DESKTOP L*/
 
-
-@media screen and (min-width:0px) {
+@media screen and (min-width: 1440px) {
 
     /*MENU E INICIO*/
+
+
     /*DATOS PERSONALES*/
     /*FORMACION ACADEMICA*/
     /*EXPERIENCIA*/
@@ -1176,8 +1165,6 @@ header.abajo {
     /*CONTACTO*/
 
 }
-
-/*RESPONSIVE DESKTOP L*/
 
 @media screen and (min-width:0px) {
 
