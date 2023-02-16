@@ -133,7 +133,7 @@ header.abajo {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: 150px;
+    top: 100px;
     padding: 0 50px;
 }
 
@@ -146,18 +146,8 @@ header.abajo {
 }
 
 .carl {
+    border: 3px solid #16C1B9;
     padding: 0;
-    z-index: 1;
-}
-
-
-.retrato-carl {
-    width: 350px;
-    height: 350px;
-    border: 3px solid #C87115;
-    position: relative;
-    top: 25px;
-    right: -385px;
 }
 
 #name-color {
@@ -247,7 +237,7 @@ header.abajo {
 .ul-form {
     width: 90vw;
     height: auto;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .ul-form li {
@@ -259,7 +249,7 @@ header.abajo {
     color: #fff;
 }
 
-.años {
+.periodo {
     text-decoration: none;
     list-style: none;
     padding-bottom: 5px;
@@ -300,11 +290,14 @@ header.abajo {
     align-items: center;
     position: relative;
     top: 90px;
+    width: auto;
+    height: auto;
 }
 
-.tmñ-sliders {
+.conteiner-sliders {
     margin: 0 20px;
-    width: 300px;
+    width: 90%;
+    height: auto;
     z-index: 2;
     padding-bottom: 10px;
 }
@@ -744,6 +737,10 @@ header.abajo {
         padding: 10px 35px;
     }
 
+    .carl {
+        width: 90%;
+    }
+
     /*DATOS PERSONALES*/
 
     .list-datos li {
@@ -817,6 +814,10 @@ header.abajo {
         top: 170px;
     }
 
+    .carl {
+        width: 70%;
+    }
+
     /*DATOS PERSONALES*/
 
     .datosp {
@@ -849,7 +850,7 @@ header.abajo {
         top: 150px;
     }
 
-    .tmñ-sliders {
+    .conteiner-sliders {
         width: 600px;
     }
 
@@ -996,7 +997,12 @@ header.abajo {
         text-align: left;
         padding: 0;
         max-width: 450px;
-    }  
+    } 
+    
+    .carl {
+        width: auto;
+        margin-left: 40px;
+    }
 
     /*DATOS PERSONALES*/
 
@@ -1006,7 +1012,7 @@ header.abajo {
 
     #contenido-datospersonales {
         grid-template-columns: 1fr 1fr;
-        padding: 0;
+        padding: 0 50px;
         align-items: center;
         justify-items: center;
     }
@@ -1034,10 +1040,9 @@ header.abajo {
     .ul-form {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
         height: auto;
         position: relative;
-        right: 10px;
+        right: 40px;
         padding: 0;
       }
       
@@ -1056,32 +1061,35 @@ header.abajo {
     }
       
     .titulo1 {
-        max-width: 500px;
+        max-width: 550px;
         background-color: #2a2929;
         padding-left: 80px;
-        padding-top: 5px;
+        padding-top: 10px;
         padding-bottom: 7px;
         border-radius: 5px;
         box-shadow: 5px 5px 10px #111111;
         border-right: 3px solid #16c1b9;
         border-bottom: 1px solid #16c1b9;
-      }
+    }
       
     .titulo2 {
-        max-width: 500px;
+        max-width: 550px;
         background-color: #2a2929;
         padding-left: 80px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 15px;
+        padding-bottom: 20px;
         border-radius: 5px;
         box-shadow: 5px 5px 10px #111111;
         border-right: 3px solid #16c1b9;
         border-bottom: 1px solid #16c1b9;
-      }
+    }
+
+    .titulo2 li {
+        padding-bottom: 5px;
+    }
       
     .conteiner-sliders {
-        width: auto;
-        height: auto;
+        width: 90%;
         z-index: 2;
         margin: 0;
         margin-left: 20px;
@@ -1188,8 +1196,38 @@ header.abajo {
 
     /*MENU E INICO*/
 
-    
+    #inicio .contenido .presentacion {
+        height: 100vh;
+        top: 0;
+    }
 
+    /*DATOS PERSONALES*/
+
+    .list-datos li {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    .list-datos li span {
+        font-size: 25px;
+    }
+
+    /*FORMACION ACADEMICA*/
+
+    .conteiner-sliders {
+        width: 90vw;
+    }
+
+    .titulo1 {
+        max-width: 700px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .titulo2 {
+        max-width: 700px;
+    }
+    
     /*EXPERIENCIA*/
 
     .exper {
@@ -1218,6 +1256,11 @@ header.abajo {
 
     .h2-contact {
         font-size: 50px;
+    }
+
+    .contactame {
+        width: 60vw;
+        height: 600px;
     }
 
 }
