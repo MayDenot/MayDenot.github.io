@@ -146,16 +146,28 @@ header.abajo {
 }
 
 .carl {
-    border: #16C1B9 solid 3px;
     padding: 0;
+    z-index: 1;
+}
+
+
+.retrato-carl {
+    width: 350px;
+    height: 350px;
+    border: 3px solid #C87115;
+    position: relative;
+    top: 25px;
+    right: -385px;
 }
 
 #name-color {
     color: #F99831;
+    font-style: italic;
 }
 
 .soy {
 	color: #16C1B9;
+    font-style: italic;
 }
 
 #check {
@@ -974,6 +986,7 @@ header.abajo {
         display: none;
     }
 
+
     #inicio .contenido .presentacion {
         display: flex;
         flex-direction: row;
@@ -981,8 +994,9 @@ header.abajo {
 
     #inicio .contenido .presentacion .tit-present {
         text-align: left;
-        padding-bottom: 0;
-    }
+        padding: 0;
+        max-width: 450px;
+    }  
 
     /*DATOS PERSONALES*/
 
@@ -1008,63 +1022,69 @@ header.abajo {
         font-size: 45px;
     }
 
-    .ul-form {
-        width: 100%;
-        height: auto;
-        position: relative;
-        right: 50px;
-        padding-top: 0;
-    }
-    .ul-form li {
-        font-size: 18px;
-        color: #16C1B9;
-    }
-    .ul-form li span {
-        color: #fff;
-    }
-    .años {
-        text-decoration: none;
-        list-style: none;
-    }
-    .titulo1{
-        width: 100%;
-        background-color: #2A2929;
-        padding-left: 80px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 10px #111111;
-        border-right: 3px solid #16C1B9;
-        border-bottom: 1px solid #16C1B9;
-    }
-
-    .titulo2 {
-        width: 100%;
-        background-color: #2A2929;
-        padding-left: 80px;
-        padding-top: 5px;
-        padding-bottom: 2px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 10px #111111;
-        border-right: 3px solid #16C1B9;
-        border-bottom: 1px solid #16C1B9;
-    }
-    
     .info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
         position: relative;
         top: 150px;
         font-size: 25px;
     }
-    .tmñ-sliders {
-        width: 500px;
-        height: 100%;
+      
+    .ul-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        height: auto;
+        position: relative;
+        right: 10px;
+        padding: 0;
+      }
+      
+    .ul-form li {
+        font-size: 17px;
+        color: #16c1b9;
+      }
+      
+    .ul-form li span {
+        color: #fff;
+    }
+      
+    .periodo {
+        text-decoration: none;
+        list-style: none;
+    }
+      
+    .titulo1 {
+        max-width: 500px;
+        background-color: #2a2929;
+        padding-left: 80px;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #111111;
+        border-right: 3px solid #16c1b9;
+        border-bottom: 1px solid #16c1b9;
+      }
+      
+    .titulo2 {
+        max-width: 500px;
+        background-color: #2a2929;
+        padding-left: 80px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #111111;
+        border-right: 3px solid #16c1b9;
+        border-bottom: 1px solid #16c1b9;
+      }
+      
+    .conteiner-sliders {
+        width: auto;
+        height: auto;
         z-index: 2;
+        margin: 0;
+        margin-left: 20px;
     }
 
     /*EXPERIENCIA*/
@@ -1111,7 +1131,7 @@ header.abajo {
     .habilidades-ul {
         border-right: 1px solid #16C1B9;
         padding-bottom: 0;
-        padding-right: 20px;
+        padding-top: 0;
     }
 
     .content-img .habilidades-img ul {
@@ -1144,7 +1164,7 @@ header.abajo {
     /*FOOTER*/
 
     .footer {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .footer h2 b {
@@ -1193,8 +1213,6 @@ header.abajo {
     .habi {
         font-size: 50px;
     }
-
-
 
     /*CONTACTO*/
 
