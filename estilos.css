@@ -975,15 +975,13 @@ header.abajo {
     }
 
     #inicio .contenido .presentacion {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100%;
-        place-content: center;
+        display: flex;
+        flex-direction: row;
     }
-    
+
     #inicio .contenido .presentacion .tit-present {
-        padding-right: 50px;
         text-align: left;
+        padding-bottom: 0;
     }
 
     /*DATOS PERSONALES*/
@@ -994,7 +992,8 @@ header.abajo {
 
     #contenido-datospersonales {
         grid-template-columns: 1fr 1fr;
-        align-content: center;
+        padding: 0;
+        align-items: center;
         justify-items: center;
     }
 
@@ -1166,6 +1165,10 @@ header.abajo {
 /*RESPONSIVE DESKTOP L*/
 
 @media screen and (min-width: 1440px) {
+
+    /*MENU E INICO*/
+
+    
 
     /*EXPERIENCIA*/
 
