@@ -1165,7 +1165,7 @@ header.abajo {
     }
 
     .contactame {
-        height: 400px;
+        height: 450px;
         width: 70vw;
     }
 
@@ -1260,32 +1260,10 @@ header.abajo {
 
     .contactame {
         width: 60vw;
-        height: 600px;
+        height: 550px;
     }
 
 }
 
-@media screen and (min-width:0px) {
 
-    /*MENU E INICIO*/
-    /*DATOS PERSONALES*/
-    /*FORMACION ACADEMICA*/
-    /*EXPERIENCIA*/
-    /*HABILIDADES*/
-    /*CONTACTO*/
-
-}
-
-
-
-@media screen and (min-width:0px) {
-
-    /*MENU E INICIO*/
-    /*DATOS PERSONALES*/
-    /*FORMACION ACADEMICA*/
-    /*EXPERIENCIA*/
-    /*HABILIDADES*/
-    /*CONTACTO*/
-
-}
 
