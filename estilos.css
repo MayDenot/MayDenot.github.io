@@ -1049,12 +1049,18 @@ header.abajo {
         font-size: 45px;
     }
 
+    .contenido-formacademica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .info {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
         position: relative;
-        top: 150px;
         font-size: 25px;
     }
       
@@ -1118,14 +1124,22 @@ header.abajo {
 
     /*EXPERIENCIA*/
 
+    .contenido-experiencia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
     .exper {
         font-size: 45px;
-        top: 30px;
+        top: 0;
     }
 
     .experiencia {
         font-size: 22px;
-        top: -30px;
+        top: 0;
     }
 
     .exp1,
@@ -1145,9 +1159,15 @@ header.abajo {
 
     /*HABILIDADES*/
 
+    .contenido-habilidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .habi {
         font-size: 45px;
-        top: 130px;
     }
 
     .habilidades {
@@ -1155,6 +1175,7 @@ header.abajo {
         flex-direction: row;
         align-content: center;
         justify-content: center;
+        top: 0;
     }
 
     .habilidades-ul {
@@ -1240,24 +1261,29 @@ header.abajo {
 
     /*FORMACION ACADEMICA*/
 
+    .form-acad {
+        top: 0;
+    }
+
     .info {
-        top: 200px;
+        top: 20px;
+        left: 150px;
     }
 
     .conteiner-sliders {
-        width: 100%;
+        width: 60%;
     }
 
     .titulo1 {
         max-width: 800px;
-        padding-bottom: 30px;
-        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .titulo2 {
         max-width: 800px;
-        padding-bottom: 30px;
-        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     
     /*EXPERIENCIA*/
