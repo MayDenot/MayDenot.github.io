@@ -1088,7 +1088,7 @@ header.abajo {
     }
       
     .titulo1 {
-        max-width: 550px;
+        max-width: 50vw;
         background-color: #2a2929;
         padding-left: 80px;
         padding-top: 10px;
@@ -1100,7 +1100,7 @@ header.abajo {
     }
       
     .titulo2 {
-        max-width: 550px;
+        max-width: 50vw;
         background-color: #2a2929;
         padding-left: 80px;
         padding-top: 15px;
@@ -1274,13 +1274,11 @@ header.abajo {
     }
 
     .titulo1 {
-        max-width: 50vw;
         padding-bottom: 20px;
         padding-top: 20px;
     }
 
     .titulo2 {
-        max-width: 50vw;
         padding-bottom: 20px;
         padding-top: 20px;
     }
