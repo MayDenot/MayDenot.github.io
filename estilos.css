@@ -10,14 +10,12 @@ html {
     max-width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #16C1B9;
 }
 
 body {
     max-width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #16C1B9;
 }
 
 /** SECCION "INICIO"*/
@@ -638,34 +636,39 @@ header.abajo {
     display: flex;
     justify-content: center;
     text-align: center;
-    text-decoration: none;
-    list-style: none;
     padding-top: 20px;
     position: relative;
     top: 5px;
 }
 
-.contenedor-footer a {
+.contenedor-footer ul {
     list-style: none;
-    text-decoration: none;
-    color: #000000;
-    padding: 20px;
 }
 
-.contenedor-footer a i {
-    font-size: 18px;
-    border-radius: 20px;
-}
-
-.contenedor-footer a i:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contenedor-footer ul li {
     width: 40px;
     height: 40px;
+    line-height: 40px;
+    margin: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.contenedor-footer ul li a {
+    color: #000000;
+}
+
+.contenedor-footer ul li:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
     background-color: #000000;
-    color: #16C1B9;
-    transition: .3s;
+}
+
+.contenedor-footer ul li:hover a {
+    color: #16C1B9 ;
 }
 
 .footer h2 b {
