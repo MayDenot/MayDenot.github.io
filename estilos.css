@@ -173,7 +173,6 @@ header.abajo {
     background-color: #16C1B9;
     width: 100vw;
     height: 100vh;
-    margin: 0;
 }
 
 .datosp {
@@ -1191,6 +1190,10 @@ header.abajo {
         width: 70vw;
     }
 
+    .contact-info {
+        box-shadow: none;
+    }
+
     /*FOOTER*/
 
     .footer {
@@ -1209,6 +1212,7 @@ header.abajo {
         padding-top: 15px;
         top: 0;
     }
+
 
 }
 
@@ -1241,17 +1245,19 @@ header.abajo {
     }
 
     .conteiner-sliders {
-        max-width: 100%;
+        width: 100%;
     }
 
     .titulo1 {
         max-width: 800px;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
 
     .titulo2 {
         max-width: 800px;
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
     
     /*EXPERIENCIA*/
