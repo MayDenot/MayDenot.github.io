@@ -672,7 +672,8 @@ header.abajo {
 }
 
 .footer h2 b {
-    font-family: 'Arapey', serif;
+    -webkit-text-stroke: 1px #000000;
+    color: #000000;
     font-size: 30px;
     padding-left: 20px;
 }
